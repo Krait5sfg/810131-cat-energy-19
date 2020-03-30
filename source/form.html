@@ -27,6 +27,101 @@
 
   <main class="form-main">
     <h1 class="form-main__title">Подбор программы</h1>
+
+    <section class="form-section">
+      <h2 class="visually-hidden">Форма для программы питания</h2>
+      <form class="form-section__form form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="form__fieldset-cat form-cat-name">
+          <li class="form-cat-name__item">
+            <label class="label" for="cat-name">Имя:*</label>
+            <input class="input" id="cat-name" type="text" placeholder="Барсик">
+          </li>
+          <li class="form-cat-name__item">
+            <label class="label" for="cat-weight">Вес (кг):*</label>
+            <input class="input" id="cat-weight" type="text" placeholder="7">
+          </li>
+          <li class="form-cat-name__item">
+            <label class="label" for="cat-age">Возраст (лет):</label>
+            <input class="input" id="cat-age" type="text" placeholder="7">
+          </li>
+        </ul>
+        <ul class="form__fieldset-radio form-radio">
+          <li class="form-radio__item">
+            <input class="input-radio" type="radio" name="for-what" id="lose-weidht" value="Похудение">
+            <label class="label" for="lose-weidht">Похудение</label>
+          </li>
+          <li class="form-radio__item">
+            <input class="input-radio" type="radio" name="for-what" id="add-weidht" value="Набор массы">
+            <label class="label" for="add-weidht">Набор массы</label>
+          </li>
+          <li class="form-radio__item">
+            <input class="input-radio" type="radio" name="for-what" id="advice" value="Нужен совет">
+            <label class="label" for="advice">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+        <div class="form__feildset-owner form-owner">
+          <span class="form-owner__title form-title">Контактные данные
+            (владельца кота)</span>
+          <ul class="form-owner__list">
+            <li class="form-owner__item">
+              <label class="label" for="email">E-mail:*</label>
+              <input class="input" id="email" type="text" placeholder="kuklachev@gmail.com">
+            </li>
+            <li class="form-owner__item">
+              <label class="label" for="phone">Телефон:*</label>
+              <input class="input" id="phone" type="text" placeholder="8 (960) 900-60-90">
+            </li>
+          </ul>
+        </div>
+        <div class="form__fieldset-comment form-comment">
+          <span class="form-comment__title form-title">Комментарий</span>
+          <textarea class="form-comment__textarea textarea" placeholder="Расскажите обо всех повадках кота"
+            aria-label="Комментарий"></textarea>
+        </div>
+        <div class="form__fieldset-additional form-additional">
+          <span class="form-additional__title form-title">Дополнительно</span>
+          <ul class="form-additional__list">
+            <li class="form-additional__item">
+              <input class="input-checkbox" id="sug-substitute" type="checkbox" name="sug-substitute" checked>
+              <label for="sug-substitute">Сахарозаменитель</label>
+            </li>
+            <li class="form-additional__item">
+              <input class="input-checkbox" id="water" type="checkbox" name="water">
+              <label class="label" for="water">Питьевая вода</label>
+            </li>
+            <li class="form-additional__item">
+              <input class="input-checkbox" id="milk" type="checkbox" name="milk">
+              <label class="label" for="milk">Молоко</label>
+            </li>
+            <li class="form-additional__item">
+              <input class="input-checkbox" id="vitamins" type="checkbox" name="vitamins">
+              <label class="label" for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </div>
+        <button class="form__button button" type="submit">Отправить заявку</button>
+        <span class="form__notice">* — Обязательные поля</span>
+      </form>
+    </section>
+
+    <section class="invitation">
+      <h2 class="invitation__title">Приглашаем
+        к сотрудничеству
+        дилеров!</h2>
+      <address class="invitation__address">ул. Большая Конюшенная, д. 19/8
+        Санкт-Петербург</address>
+    </section>
+
+    <section class="map">
+      <h2 class="visually-hidden">Расположение магазина</h2>
+      <div class="map__yandex">
+        <!-- тут будет карта расположения магазина -->
+        <img src="https://via.placeholder.com/150x150"
+          alt="Магазин расположен по адресу: Санкт Петербург, улица Большая Конюшенная, д. 19/8" width="400"
+          height="320">
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
