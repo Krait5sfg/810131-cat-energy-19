@@ -1,0 +1,21 @@
+.improve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+  height: 56px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+}
+
+.improve__title {
+  @include text-set (24px, 24px, $os-reg);
+  color: #111111;
+}
+
+.improve__text {
+  @include text-set (12px, 12px, $ar-reg);
+  text-align: center;
+  color: #444444;
+}

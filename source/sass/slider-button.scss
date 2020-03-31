@@ -1,0 +1,9 @@
+.slider-button {
+  @include text-set (16px, 20px, $os-reg);
+  color: #111111;
+
+  border: none;
+  background: inherit;
+
+  cursor: pointer;
+}

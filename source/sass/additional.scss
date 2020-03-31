@@ -1,0 +1,16 @@
+.additional__title {
+  @include text-set (24px, 24px, $os-reg);
+  text-align: left;
+  color: #111111;
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.additional-product__item {
+  @include text-set (14px, 14px, $ar-reg);
+}

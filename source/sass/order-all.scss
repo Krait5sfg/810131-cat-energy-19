@@ -1,0 +1,15 @@
+.order-all {
+  width: 280px;
+  height: 289px;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+}
+
+.order-all__text {
+  width: 160px;
+  height: 56px;
+
+  @include text-set(16px, 20px, $ar-reg);
+  text-align: center;
+  color: #ffffff;
+}

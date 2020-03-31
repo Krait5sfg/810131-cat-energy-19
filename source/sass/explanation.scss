@@ -1,0 +1,21 @@
+.explanation__title {
+  @include text-set (36px, 60px, $os-reg);
+  text-align: left;
+  color: #111111;
+}
+
+.explanation__list {
+  list-style: none;
+}
+
+.explanation__item {
+  max-width: 194px;
+
+  @include text-set (14px, 18px, $ar-reg);
+  text-align: left;
+  color: #444444;
+}
+
+.explanation__item:not(:nth-child(1)) {
+  margin-top: 32px;
+}
