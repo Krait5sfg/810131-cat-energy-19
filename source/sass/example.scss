@@ -1,0 +1,39 @@
+.example {
+  background-color: #f2f2f2;
+}
+
+.example__title {
+  @include text-set (36px, 60px, $os-reg);
+  text-align: left;
+  color: #111111;
+}
+
+.example__text {
+  @include text-set (14px, 18px, $ar-reg);
+  text-align: left;
+}
+
+.example__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.example__item:nth-child(1) {
+  margin-right: auto;
+}
+
+.example__item:nth-child(2) {
+  margin-left: auto;
+}
+
+.example__cost {
+  margin: 0;
+  padding: 0;
+
+  @include text-set (14px, 20px, $os-reg);
+  text-align: center;
+  color: #111111;
+}

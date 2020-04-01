@@ -1,0 +1,8 @@
+.additional-product {
+  width: 281px;
+  height: 130px;
+}
+
+.additional-product__title {
+  @include text-set(16px, 16px, $os-reg);
+}

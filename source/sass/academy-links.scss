@@ -1,0 +1,20 @@
+.academy-links {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 78px;
+
+  text-decoration: none;
+}
+
+.academy-links__text {
+  margin-right: auto;
+
+  @include text-set (16px, 16px, $ar-reg);
+  text-align: left;
+  color: #444444;
+}
+
+.academy-links__img {
+  margin-left: auto;
+}
