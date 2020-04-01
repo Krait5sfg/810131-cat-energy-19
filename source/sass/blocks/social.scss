@@ -8,6 +8,8 @@
   list-style: none;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 36px;
+.social__item {
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
 }

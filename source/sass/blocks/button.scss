@@ -12,20 +12,20 @@
 
   background-color: #68b738;
   border: none;
-}
 
-.button--index {
-  font-size: 14px;
-  line-height: 18px;
-}
+  &--index {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-.button--catalog {
-  font-size: 16px;
-  line-height: 20px;
-}
+  &--catalog {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-.button--show-more {
-  color: #444444;
+  &--show-more {
+    color: #444444;
 
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
+  }
 }

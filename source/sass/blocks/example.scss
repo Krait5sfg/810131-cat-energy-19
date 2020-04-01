@@ -21,12 +21,14 @@
   list-style: none;
 }
 
-.example__item:nth-child(1) {
-  margin-right: auto;
-}
+.example__item {
+  &:nth-child(1) {
+    margin-right: auto;
+  }
 
-.example__item:nth-child(2) {
-  margin-left: auto;
+  &:nth-child(2) {
+    margin-left: auto;
+  }
 }
 
 .example__cost {

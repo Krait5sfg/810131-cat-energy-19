@@ -6,3 +6,7 @@
 .additional-product__title {
   @include text-set(16px, 16px, $os-reg);
 }
+
+.additional-product__item {
+  @include text-set (14px, 14px, $ar-reg);
+}

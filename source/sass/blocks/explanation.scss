@@ -14,8 +14,8 @@
   @include text-set (14px, 18px, $ar-reg);
   text-align: left;
   color: #444444;
-}
 
-.explanation__item:not(:nth-child(1)) {
-  margin-top: 32px;
+  &:not(:nth-child(1)) {
+    margin-top: 32px;
+  }
 }

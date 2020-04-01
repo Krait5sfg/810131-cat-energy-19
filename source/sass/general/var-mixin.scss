@@ -1,6 +1,6 @@
-$os-med: "oswaldmedium", "Arial", sans-serif;
-$os-reg: "oswaldregular", "Arial", sans-serif;
-$ar-reg: "arialregular", "Arial", sans-serif;
+$os-med: "Oswald Medium", "Arial", sans-serif;
+$os-reg: "Oswald Regular", "Arial", sans-serif;
+$ar-reg: "Arial", "Arial", sans-serif;
 
 @mixin text-set ($font-size, $line-height, $font-family) {
   font-size: $font-size;
