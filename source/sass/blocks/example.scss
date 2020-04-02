@@ -3,13 +3,14 @@
 }
 
 .example__title {
-  @include text-set (36px, 60px, $os-reg);
+  @include text-set (36px, 60px, $oswald);
+  font-weight: 400;
   text-align: left;
   color: #111111;
 }
 
 .example__text {
-  @include text-set (14px, 18px, $ar-reg);
+  @include text-set (14px, 18px, $arial);
   text-align: left;
 }
 
@@ -35,7 +36,8 @@
   margin: 0;
   padding: 0;
 
-  @include text-set (14px, 20px, $os-reg);
+  @include text-set (14px, 20px, $oswald);
+  font-weight: 400;
   text-align: center;
   color: #111111;
 }

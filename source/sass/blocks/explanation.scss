@@ -1,5 +1,6 @@
 .explanation__title {
-  @include text-set (36px, 60px, $os-reg);
+  @include text-set (36px, 60px, $oswald);
+  font-weight: 400;
   text-align: left;
   color: #111111;
 }
@@ -11,7 +12,7 @@
 .explanation__item {
   max-width: 194px;
 
-  @include text-set (14px, 18px, $ar-reg);
+  @include text-set (14px, 18px, $arial);
   text-align: left;
   color: #444444;
 

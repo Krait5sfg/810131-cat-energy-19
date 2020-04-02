@@ -10,7 +10,7 @@
 .academy-links__text {
   margin-right: auto;
 
-  @include text-set (16px, 16px, $ar-reg);
+  @include text-set (16px, 16px, $arial);
   text-align: left;
   color: #444444;
 }

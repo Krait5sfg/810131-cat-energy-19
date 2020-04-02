@@ -6,17 +6,19 @@
 }
 
 .product__title {
-  @include text-set (24px, 37px, $os-reg);
+  @include text-set (24px, 37px, $oswald);
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .product__text {
-  @include text-set (14px, 18px, $ar-reg);
+  @include text-set (14px, 18px, $arial);
   color: #444444;
 }
 
 .product__link {
-  @include text-set (16px, 16px, $os-reg);
+  @include text-set (16px, 16px, $oswald);
+  font-weight: 400;
   color: #111111;
   text-transform: uppercase;
 }

@@ -1,5 +1,6 @@
 .page-title {
-  @include text-set (36px, 60px, $os-reg);
+  @include text-set (36px, 60px, $oswald);
+  font-weight: 400;
   text-align: left;
   color: #111111;
 }

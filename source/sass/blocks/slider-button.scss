@@ -1,5 +1,6 @@
 .slider-button {
-  @include text-set (16px, 20px, $os-reg);
+  @include text-set (16px, 20px, $oswald);
+  font-weight: 400;
   color: #111111;
 
   border: none;

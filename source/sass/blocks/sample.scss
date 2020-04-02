@@ -6,11 +6,13 @@
 }
 
 .sample__title {
-  @include text-set (36px, 36px, $os-reg);
+  @include text-set (36px, 36px, $oswald);
+  font-weight: 400;
   color: #ffffff;
 }
 
 .sample__text {
-  @include text-set (14px, 14px, $os-reg);
+  @include text-set (14px, 14px, $oswald);
+  font-weight: 400;
   color: #ffffff;
 }

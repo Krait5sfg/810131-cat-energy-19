@@ -16,7 +16,8 @@
 }
 
 .menu__link {
-  @include text-set (20px, 20px, $os-med);
+  @include text-set (20px, 20px, $oswald);
+  font-weight: 500;
   color: #111111;
   text-transform: uppercase;
   text-decoration: none;

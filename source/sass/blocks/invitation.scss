@@ -14,7 +14,8 @@
   margin: 0;
   max-width: 123px;
 
-  @include text-set (16px, 20px, $os-reg);
+  @include text-set (16px, 20px, $oswald);
+  font-weight: 400;
   text-align: left;
   color: #111111;
 }
@@ -22,7 +23,7 @@
 .invitation__address {
   max-width: 136px;
 
-  @include text-set (14px, 20px, $ar-reg);
+  @include text-set (14px, 20px, $arial);
   text-align: left;
   font-style: normal;
 }

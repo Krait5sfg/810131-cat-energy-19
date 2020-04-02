@@ -8,14 +8,15 @@
 .catalog-product__title {
   width: 80px;
 
-  @include text-set (20px, 20px, $os-reg);
+  @include text-set (20px, 20px, $oswald);
+  font-weight: 400;
   text-align: left;
   color: inherit;
   text-transform: uppercase;
 }
 
 .catalog-product__data {
-  @include text-set (12px, 16px, $ar-reg);
+  @include text-set (12px, 16px, $arial);
   color: #444444;
 }
 
