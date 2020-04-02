@@ -1,8 +1,10 @@
-/*index page*/
+/*general*/
 @import "normalize.scss";
-@import "common.scss";
 @import "fonts.scss";
-@import "var-mixin.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "common.scss";
+/*index*/
 @import "wrapper.scss";
 @import "header.scss";
 @import "logo.scss";
@@ -20,7 +22,6 @@
 @import "footer.scss";
 @import "social.scss";
 @import "academy-links.scss";
-
 /*catalog page*/
 @import "page-title.scss";
 @import "catalog-goods.scss";
