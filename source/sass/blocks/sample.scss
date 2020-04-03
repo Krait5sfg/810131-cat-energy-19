@@ -6,6 +6,9 @@
 }
 
 .sample__title {
+  margin: 0;
+  padding: 0;
+
   @include text-set (36px, 36px, $oswald);
   font-weight: 400;
   color: #ffffff;
@@ -15,4 +18,14 @@
   @include text-set (14px, 14px, $oswald);
   font-weight: 400;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .sample__title {
+    color: #111111;
+  }
+
+  .sample__text {
+    color: #111111;
+  }
 }

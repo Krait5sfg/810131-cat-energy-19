@@ -1,6 +1,25 @@
 .catalog-goods__list {
-  margin: 0;
-  padding: 0;
+  @include list-reset;
+}
 
-  list-style: none;
+@media (min-width: $tablet-width) {
+  .catalog-goods__wrapper {
+    max-width: $tablet-width;
+    padding: 0 30px;
+    margin: auto;
+  }
+
+  .catalog-goods__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-goods__wrapper {
+    max-width: $desktop-width;
+    padding: 0 110px;
+  }
 }

@@ -11,17 +11,15 @@
 <body>
 
   <header class="header">
-    <div class="wrapper">
+    <div class="header__wrapper">
       <div class="header__container">
         <a class="header__logo logo" href="">
-          <img class="logo__image" src="https://via.placeholder.com/150x150" alt="Логотип Cat Energy" width="33"
-            height="38">
-          <img class="logo__text" src="https://via.placeholder.com/150x150" alt="Cat Energy" width="101" height="18">
+          <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="39">
         </a>
-        <button class="header__button" type="button">Кнопка</button>
+        <button class="header__button" type="button" aria-label="Меню сайта"></button>
       </div>
-      <nav class="header__main-menu">
-        <ul class="menu">
+      <nav class="header__main-menu menu">
+        <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="">Главная</a></li>
           <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог продукции</a></li>
           <li class="menu__item"><a class="menu__link" href="form.html">Подбор программы</a></li>
@@ -46,7 +44,7 @@
     </section>
 
     <section class="offers">
-      <div class="wrapper">
+      <div class="offers__wrapper">
         <h2 class="visually-hidden">Предложения</h2>
         <div class="offers__product product">
           <h3 class="product__title product__title--img-cat">Похудение</h3>
@@ -64,18 +62,21 @@
     </section>
 
     <section class="explanation">
-      <div class="wrapper">
+      <div class="explanation__wrapper">
         <h2 class="explanation__title">Как это работает</h2>
         <ul class="explanation__list">
-          <li class="explanation__item explanation__item--img-leaf">Функциональное питание содержит только полезные
-            питательные вещества.</li>
-          <li class="explanation__item explanation__item--img-water">Выпускается в виде порошка, который нужно лишь
-            залить
-            кипятком и готово.</li>
-          <li class="explanation__item explanation__item--img-tableware">Замените один-два приема обычной еды на наше
-            функциональное питание.</li>
-          <li class="explanation__item explanation__item--img-clock">Уже через месяц наслаждайтесь изменениями к лучшему
-            вашего питомца!</li>
+          <li class="explanation__item explanation__item--img-leaf">
+            <p class="explanation__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="explanation__item explanation__item--img-water">
+            <p class="explanation__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="explanation__item explanation__item--img-tableware">
+            <p class="explanation__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="explanation__item explanation__item--img-clock">
+            <p class="explanation__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -102,8 +103,8 @@
         <div class="slider-cat">
           <img class="slider-cat__img" src="img/before-mobile@1x.png" alt="Кот Борис на старом питании" width="311"
             height="232">
-          <img class="slider-cat__img hidden" src="../img/after-mobile@1x.png" alt="Кот Борис на новом питании"
-            width="311" height="232">
+          <img class="slider-cat__img hidden" src="img/after-mobile@1x.png" alt="Кот Борис на новом питании" width="311"
+            height="232">
           <div class="slider-cat__toggle slider-toggle">
             <button class="slider-toggle__prev slider-button" type="button">Было</button>
             <div class="slider-toggle__condition slider-condition">
@@ -136,7 +137,7 @@
   </main>
 
   <footer class="footer">
-    <div class="wrapper wrapper--center">
+    <div class="footer__wrapper">
       <img class="footer__logo-text" src="https://via.placeholder.com/150x150" alt="Cat Energy" width="128" height="24">
       <ul class="footer__social social">
         <li class="social__item">

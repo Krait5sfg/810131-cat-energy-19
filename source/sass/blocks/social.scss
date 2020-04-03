@@ -1,11 +1,9 @@
 .social {
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
   height: 62px;
 
-  list-style: none;
+  @include list-reset;
 }
 
 .social__item {
