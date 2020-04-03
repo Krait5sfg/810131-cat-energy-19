@@ -1,0 +1,19 @@
+.main-catalog__wrapper {
+  max-width: 320px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog__wrapper {
+    max-width: $tablet-width;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__wrapper {
+    max-width: $desktop-width;
+    padding: 0 110px;
+  }
+}

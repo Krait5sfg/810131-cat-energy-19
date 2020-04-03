@@ -1,12 +1,9 @@
-.header__wrapper {
-  max-width: 320px;
-  margin: auto;
-}
-
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 320px;
+  margin: auto;
   min-height: 65px;
   padding-left: 20px;
   padding-right: 20px;
@@ -30,12 +27,15 @@
 @media (min-width: $tablet-width) {
   .header__container {
     padding: 0;
+    width: auto;
+    margin: 0;
   }
 
   .header__wrapper {
     max-width: $tablet-width;
     padding-left: 30px;
     padding-right: 0;
+    margin: auto;
   }
 
   .header__button {

@@ -13,7 +13,7 @@
   background-color: #68b738;
   border: none;
 
-  &--index {
+  &--sample {
     font-size: 14px;
     line-height: 18px;
   }
@@ -27,5 +27,13 @@
     color: #444444;
 
     background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--sample {
+      width: 245px;
+    }
   }
 }
