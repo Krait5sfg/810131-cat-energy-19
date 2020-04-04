@@ -1,0 +1,14 @@
+.additional-product {
+  width: 281px;
+  height: 130px;
+}
+
+.additional-product__title {
+  @include text-set(16px, 16px, $oswald);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additional-product__item {
+  @include text-set (14px, 14px, $arial);
+}

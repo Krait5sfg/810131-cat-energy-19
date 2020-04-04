@@ -1,4 +1,5 @@
-.order-all__wrapper {
+.order-all {
+  width: 280px;
   height: 289px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -8,7 +9,7 @@
   width: 160px;
   height: 56px;
 
-  @include text-set(16px, 20px, $ar-reg);
+  @include text-set(16px, 20px, $arial);
   text-align: center;
   color: #ffffff;
 }

@@ -1,0 +1,36 @@
+.product {
+  min-height: 266px;
+
+  background-color: #f2f2f2;
+}
+
+.product__title {
+  @include text-set (24px, 37px, $oswald);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product__text {
+  @include text-set (14px, 18px, $arial);
+  color: #444444;
+}
+
+.product__link {
+  @include text-set (16px, 16px, $oswald);
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    width: 708px;
+    min-height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 570px;
+  }
+}

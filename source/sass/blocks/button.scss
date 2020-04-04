@@ -1,0 +1,39 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+
+  font-family: $oswald;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #68b738;
+  border: none;
+
+  &--sample {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--catalog {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &--show-more {
+    color: #444444;
+
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--sample {
+      width: 245px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 320px;
+  margin: auto;
+  min-height: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__button {
+  width: 25px;
+  height: 19px;
+  margin-left: auto;
+
+  border: none;
+  background-image: url("../img/icon-mobile-menu.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .header__container {
+    padding: 0;
+    width: auto;
+    margin: 0;
+  }
+
+  .header__wrapper {
+    max-width: $tablet-width;
+    padding-left: 30px;
+    padding-right: 0;
+    margin: auto;
+  }
+
+  .header__button {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    max-width: $desktop-width;
+    padding-left: 110px;
+  }
+}

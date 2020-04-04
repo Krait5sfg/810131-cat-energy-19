@@ -1,5 +1,6 @@
 .additional__title {
-  @include text-set (24px, 24px, $os-reg);
+  @include text-set (24px, 24px, $oswald);
+  font-weight: 400;
   text-align: left;
   color: #111111;
 }
@@ -9,8 +10,4 @@
   padding: 0;
 
   list-style: none;
-}
-
-.additional-product__item {
-  @include text-set (14px, 14px, $ar-reg);
 }

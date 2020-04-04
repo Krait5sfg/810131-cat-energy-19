@@ -1,9 +1,11 @@
-$os-med: "oswaldmedium", "Arial", sans-serif;
-$os-reg: "oswaldregular", "Arial", sans-serif;
-$ar-reg: "arialregular", "Arial", sans-serif;
-
 @mixin text-set ($font-size, $line-height, $font-family) {
   font-size: $font-size;
   line-height: $line-height;
   font-family: $font-family;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

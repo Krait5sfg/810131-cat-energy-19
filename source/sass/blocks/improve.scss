@@ -10,12 +10,13 @@
 }
 
 .improve__title {
-  @include text-set (24px, 24px, $os-reg);
+  @include text-set (24px, 24px, $oswald);
+  font-weight: 400;
   color: #111111;
 }
 
 .improve__text {
-  @include text-set (12px, 12px, $ar-reg);
+  @include text-set (12px, 12px, $arial);
   text-align: center;
   color: #444444;
 }
