@@ -1,16 +1,34 @@
-.header__container {
+.header__block {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 320px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   min-height: 65px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 222px;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+  }
 }
 
-.header__logo {
-  margin-right: auto;
+.header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-top: 50px;
+  }
 }
 
 .header__button {
@@ -22,30 +40,9 @@
   background-image: url("../img/icon-mobile-menu.png");
   background-repeat: no-repeat;
   background-color: transparent;
-}
 
-@media (min-width: $tablet-width) {
-  .header__container {
-    padding: 0;
-    width: auto;
-    margin: 0;
-  }
-
-  .header__wrapper {
-    max-width: $tablet-width;
-    padding-left: 30px;
-    padding-right: 0;
-    margin: auto;
-  }
-
-  .header__button {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .header__wrapper {
-    max-width: $desktop-width;
-    padding-left: 110px;
-  }
-}

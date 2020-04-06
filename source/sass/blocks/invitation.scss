@@ -4,15 +4,18 @@
   }
 }
 
-.invitation__container {
+.invitation__wrapper {
   display: flex;
-  margin-left: 20px;
+  justify-content: center;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .invitation__title {
   padding: 0;
   margin: 0;
-  max-width: 123px;
+  max-width: 140px;
 
   @include text-set (16px, 20px, $oswald);
   font-weight: 400;
@@ -21,7 +24,7 @@
 }
 
 .invitation__address {
-  max-width: 136px;
+  max-width: 140px;
 
   @include text-set (14px, 20px, $arial);
   text-align: left;

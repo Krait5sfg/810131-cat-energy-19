@@ -1,16 +1,30 @@
 .product {
-  min-height: 266px;
+  min-height: 266px; /*временно*/
 
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px; /*временно*/
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px; /*временно*/
+  }
 }
 
 .product__title {
+  margin: 0;
+  padding: 0;
+
   @include text-set (24px, 37px, $oswald);
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .product__text {
+  margin: 0;
+  padding: 0;
+
   @include text-set (14px, 18px, $arial);
   color: #444444;
 }
@@ -22,15 +36,3 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $tablet-width) {
-  .product {
-    width: 708px;
-    min-height: 372px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .product {
-    width: 570px;
-  }
-}

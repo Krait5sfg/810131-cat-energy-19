@@ -1,7 +1,17 @@
 .explanation__wrapper {
   max-width: 320px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    padding: 0 40px;
+  }
 }
 
 .explanation__title {
@@ -16,54 +26,44 @@
 
 .explanation__list {
   @include list-reset;
-}
 
-.explanation__item {
-  &:not(:nth-child(1)) {
-    margin-top: 32px;
-  }
-}
-
-.explanation__text {
-  max-width: 194px;
-
-  @include text-set (14px, 18px, $arial);
-  text-align: left;
-  color: #444444;
-}
-
-@media (min-width: $tablet-width) {
-  .explanation__wrapper {
-    max-width: $tablet-width;
-    padding: 0 30px;
-  }
-
-  .explanation__list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .explanation__item {
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.explanation__item {
+  outline: 1px solid green;
+
+  &:not(:nth-child(1)) {
+    margin-top: 32px;
+  }
+
+  @media (min-width: $tablet-width) {
     width: 354px;
-    min-height: 287px;
+    min-height: 287px; /*временно*/
 
     &:nth-child(1n) {
       margin-top: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px; /*временно*/
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .explanation__wrapper {
-    max-width: $desktop-width;
-    padding: 0 110px;
-  }
+.explanation__text {
+  max-width: 194px;
+  margin: 0;
+  padding: 0;
 
-  .explanation__item {
-    width: 285px;
-
-    &:nth-child(3) {
-      margin-left: auto;
-    }
-  }
+  @include text-set (14px, 18px, $arial);
+  text-align: left;
+  color: #444444;
 }
