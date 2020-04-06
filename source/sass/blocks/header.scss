@@ -17,8 +17,8 @@
 
 .header__wrapper {
   @media (min-width: $tablet-width) {
-    display: flex;
     width: 100%;
+    display: flex;
     padding: 0 30px;
     padding-top: 20px;
   }

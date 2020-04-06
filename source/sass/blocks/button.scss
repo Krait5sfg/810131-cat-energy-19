@@ -1,14 +1,14 @@
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
+  display: block;
+  min-height: 40px;
+  padding: 10px 0;
 
   font-family: $oswald;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 
   background-color: #68b738;
   border: none;
@@ -16,6 +16,16 @@
   &--sample {
     font-size: 14px;
     line-height: 18px;
+    font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      min-height: 54px;
+      width: 245px;
+      padding-top: 15px;
+
+      @include text-set (20px, 20px, $oswald);
+      font-weight: 400;
+    }
   }
 
   &--catalog {
@@ -30,10 +40,3 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .button {
-    &--sample {
-      width: 245px;
-    }
-  }
-}
