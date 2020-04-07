@@ -1,52 +1,71 @@
 .explanation__wrapper {
-  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 18px;
+  min-height: 447px;
+  outline: 2px solid red;
 
   @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
     padding: 0 30px;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     padding: 0 40px;
+    padding-top: 70px;
   }
 }
 
 .explanation__title {
   margin: 0;
-  padding: 0;
 
   @include text-set (36px, 60px, $oswald);
   font-weight: 400;
   text-align: left;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
 }
 
 .explanation__list {
   @include list-reset;
+  margin-top: 26px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+
   }
 }
 
 .explanation__item {
-  outline: 1px solid green;
+  position: relative;
+
+  min-height: 61px;
+  padding-top: 5px;
+  padding-left: 80px;
 
   &:not(:nth-child(1)) {
-    margin-top: 32px;
+    margin-top: 20px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 354px;
-    min-height: 287px; /*временно*/
+    width: 45.8%;
+    min-height: 286px;
+    margin-bottom: 30px;
+    padding-left: 0;
+    padding-top: 110px;
+    padding-right: 70px;
 
     &:nth-child(1n) {
       margin-top: 0;
@@ -54,16 +73,134 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px; /*временно*/
+    width: 245px;
+    padding-right: 0;
+  }
+
+  &--img-leaf {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("/img/advantage-leaf@1x.png"), linear-gradient(to bottom, #68b738, #68b738);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  &--img-water {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("/img/advantage-powder@1x.png"), linear-gradient(to bottom, #68b738, #68b738);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  &--img-tableware {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("/img/advantage-dining@1x.png"), linear-gradient(to bottom, #68b738, #68b738);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  &--img-clock {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("/img/advantage-clock@1x.png"), linear-gradient(to bottom, #68b738, #68b738);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+.explanation__number {
+  @include text-set(281px, 281px, $oswald);
+  font-weight: 400;
+  color: #f2f2f2;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -40px;
+    right: 80px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }
 
 .explanation__text {
-  max-width: 194px;
   margin: 0;
-  padding: 0;
 
   @include text-set (14px, 18px, $arial);
   text-align: left;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+  }
 }
