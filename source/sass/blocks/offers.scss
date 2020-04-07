@@ -1,12 +1,9 @@
 .offers__wrapper {
-  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 22px;
   outline: 1px solid green;
 
   @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
     padding: 0 30px;
   }
 
@@ -15,12 +12,19 @@
     justify-content: space-between;
     max-width: $desktop-width;
     padding: 0 40px;
+    padding-top: 80px;
   }
 }
 
 .offers__product {
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {

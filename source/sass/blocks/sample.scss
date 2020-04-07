@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 840px;
+    min-height: 865px;
 
     &::before {
       background-image: none;
@@ -49,7 +49,6 @@
 
 .sample__wrapper {
   position: relative;
-  outline: 5px solid green;
   min-height: 503px;
   padding: 0 20px;
   padding-top: 30px;
