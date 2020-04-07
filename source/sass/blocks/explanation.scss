@@ -62,13 +62,18 @@
   @media (min-width: $tablet-width) {
     width: 45.8%;
     min-height: 286px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     padding-left: 0;
     padding-top: 110px;
     padding-right: 70px;
 
     &:nth-child(1n) {
       margin-top: 0;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 30px;
     }
   }
 

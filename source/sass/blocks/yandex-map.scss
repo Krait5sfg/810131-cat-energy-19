@@ -1,4 +1,13 @@
 .yandex-map {
-  max-width: 320px;
-  margin: 0 auto;
+  min-height: 362px;
+  overflow-x: hidden;
+
+  background-image: url("/img/bg-map-mobile@1x.png");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }

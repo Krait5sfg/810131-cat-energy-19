@@ -1,8 +1,15 @@
 .example {
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
+  background-color: red; /*заглушка*/
+  height: 705px; /*временно высота заглушки*/
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(#ffffff 50%, #eaeaea 50%);
+    // background-image: linear-gradient(#ffffff 50%, #eaeaea 50%);
+    height: 1083px; /*временно высота заглушки*/
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 590px; /*временно высота заглушки*/
   }
 }
 

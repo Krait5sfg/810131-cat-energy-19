@@ -126,14 +126,10 @@
         <h2 class="invitation__title">Приглашаем
           к&#160;сотрудничеству
           дилеров!</h2>
-        <address class="invitation__address">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</address>
+        <address class="invitation__address">ул. Большая Конюшенная,&#160;д.&#160;19/8
+          <span class="invitation-city">Санкт-Петербург</span></address>
       </div>
-      <div class="invitation__map yandex-map">
-        <!-- тут будет карта расположения магазина -->
-        <img src="img/bg-map-mobile@1x.png"
-          alt="Магазин расположен по адресу: Санкт Петербург, улица Большая Конюшенная, д. 19/8" width="320"
-          height="400">
+      <div class="invitation__map yandex-map" id="my-map">
       </div>
     </section>
 
@@ -160,7 +156,10 @@
       </a>
     </div>
   </footer>
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c44859d8-d87b-4b60-aa9e-429e15f7d631&lang=ru_RU"
+    type="text/javascript">
+    </script>
+  <script src="/js/yandex-map.js"></script>
 </body>
 
 </html>
