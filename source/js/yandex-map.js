@@ -7,7 +7,7 @@ function init() {
     center: [59.93886466, 30.32310321],
     zoom: 17,
     controls: [],
-    // behaviors: ["drag"],
+    behaviors: ["drag"],
   });
 
   var point = new ymaps.Placemark([59.93886466, 30.32310321],
@@ -21,8 +21,4 @@ function init() {
       iconImageOffset: [-30, -30],
     });
   map.geoObjects.add(point);
-
-  map.events.add('resize', function () {
-    console.log('О, событие!');
-  });
 }

@@ -1,5 +1,5 @@
 .yandex-map {
-  min-height: 362px;
+  height: 362px;
   overflow-x: hidden;
 
   background-image: url("/img/bg-map-mobile@1x.png");
@@ -8,6 +8,6 @@
   background-position: 50% 50%;
 
   @media (min-width: $tablet-width) {
-    min-height: 400px;
+    height: 400px;
   }
 }
