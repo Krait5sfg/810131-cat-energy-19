@@ -18,16 +18,10 @@
   padding-top: 22px;
   text-align: center;
 
-  border-bottom: 1px solid #eeeeee;
-
-  &:nth-child(1) {
-    border-top: 1px solid #eeeeee;
-  }
+  border-bottom: 2px solid #eeeeee;
 
   @media (min-width: $tablet-width) {
-    &:nth-child(1n) {
-      border: none;
-    }
+    border: none;
   }
 }
 
@@ -47,5 +41,12 @@
     @include text-set(20px, 25px, $oswald);
     font-weight: 400;
     color: #ffffff;
+  }
+
+  /*для меню в каталоге*/
+  &--black {
+    @media (min-width: $desktop-width) {
+      color: #111111;
+    }
   }
 }

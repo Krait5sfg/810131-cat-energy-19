@@ -1,25 +1,17 @@
 .catalog-goods__list {
   @include list-reset;
-}
 
-@media (min-width: $tablet-width) {
-  .catalog-goods__wrapper {
-    max-width: $tablet-width;
-    padding: 0 30px;
-    margin: auto;
-  }
-
-  .catalog-goods__list {
+  @media (min-width: $tablet-width) {
+    /*на планшете выстраивает карточки товаров по рядам и строкам*/
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .catalog-goods__wrapper {
-    max-width: $desktop-width;
-    padding: 0 110px;
+.catalog-goods__wrapper {
+  /*работает для секции в целом начиная с планшета*/
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
   }
 }
