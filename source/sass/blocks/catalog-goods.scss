@@ -13,5 +13,6 @@
   /*работает для секции в целом начиная с планшета*/
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    padding-top: 30px;
   }
 }
