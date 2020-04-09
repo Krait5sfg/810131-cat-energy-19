@@ -1,13 +1,40 @@
 .order-all {
-  width: 280px;
-  height: 289px;
+  min-height: 363px;
+  padding-top: 40px;
+}
 
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
+.order-all__wrapper {
+  position: relative;
+  min-height: 289px;
+
+  color: #ffffff;
+
+  background-image: url("/img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 29%;
+    left: 50%;
+
+    width: 55px;
+    height: 60px;
+
+    transform: translate(-50%, -29%);
+    background-image: url("/img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .order-all__text {
-  width: 160px;
-  height: 56px;
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  width: 173px;
+  margin: 0;
+
+  transform: translate(-50%, -82%);
 
   @include text-set(16px, 20px, $arial);
   text-align: center;

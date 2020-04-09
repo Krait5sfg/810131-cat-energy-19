@@ -1,13 +1,39 @@
+.additional__wrapper {
+  /* влияет на секцию в целом */
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    padding: 0 30px;
+    padding-top: 64px;
+  }
+}
+
 .additional__title {
+  margin: 0;
+
   @include text-set (24px, 24px, $oswald);
   font-weight: 400;
   text-align: left;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    width: 410px;
+
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 
 .additional__list {
-  margin: 0;
-  padding: 0;
+  @include list-reset;
+  padding-top: 32px;
 
-  list-style: none;
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+  }
 }

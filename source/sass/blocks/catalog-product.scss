@@ -1,21 +1,19 @@
 .catalog-product {
-  border-top: 1px solid #ededed;
+  height: 209px;
 
-  &:not(:first-child) {
-    margin-top: -1px;
-  }
+  border-top: 1px solid #ededed;
 
   @media (min-width: $tablet-width) {
     // width: 45.76%; /*резина*/
     width: 324px; /*адаптив*/
     height: 571px;
 
-    &:not(:first-child) {
-      margin-top: 0;
-    }
-
     background-image: linear-gradient(to bottom, #ffffff 137px, #f2f2f2 137px);
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
@@ -28,16 +26,22 @@
   flex-grow: 1;
   min-height: 209px;
   padding: 0 20px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     position: relative;
 
     width: 100%;
+    height: 100%;
 
     flex-direction: column;
     padding: 0 35px;
     padding-top: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
+    padding-right: 37px;
   }
 }
 
@@ -51,29 +55,30 @@
   }
 }
 
-.catalog-product__link {
-  width: 50%; /*адаптивность и резина на мобилке*/
-
+.catalog-product__text-link {
   text-align: center;
   text-decoration: none;
   color: #111111;
+}
+
+.catalog-product__img-link {
+  width: 50%; /*адаптивность и резина на мобилке*/
+
+  font-size: 0;
 
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+  /*выравнивает картинки разного размера на планшете*/
+  @media (min-width: $tablet-width) {
+    position: absolute; /*убирает картинки из потока чтобы паддингами врапера влиять на контент*/
+    top: 53px;
+    left: 0;
 
-  &--img-link {
-    /*выравнивает картинки разного размера на планшете*/
-    @media (min-width: $tablet-width) {
-      position: absolute; /*убирает картинки из потока чтобы паддингами врапера влиять на контент*/
-      top: 60px;
-      left: 0;
-
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      height: 208px;
-    }
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 208px;
   }
 }
 

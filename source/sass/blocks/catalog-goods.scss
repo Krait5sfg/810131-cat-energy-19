@@ -2,7 +2,7 @@
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    /*на планшете выстраивает карточки товаров по рядам и строкам*/
+    /*начиная с планшета выстраивает карточки товаров по рядам и строкам*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,5 +17,16 @@
     padding: 0 30px;
     padding-top: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    padding: 0 40px;
+    padding-top: 30px;
+  }
 }
 
+.catalog-goods__item {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 1px;
+  }
+}
