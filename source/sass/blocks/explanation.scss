@@ -1,11 +1,12 @@
 .explanation__wrapper {
+  max-width: 320px; /*адаптив*/
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 18px;
   min-height: 447px;
-  outline: 2px solid red;
 
   @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
     padding: 0 30px;
     padding-top: 45px;
   }
@@ -40,11 +41,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 75px;
+    margin-top: 72px;
   }
 
   @media (min-width: $desktop-width) {
-
+    margin-top: 75px;
   }
 }
 
@@ -52,7 +53,7 @@
   position: relative;
 
   min-height: 61px;
-  padding-top: 5px;
+  padding-top: 3px;
   padding-left: 80px;
 
   &:not(:nth-child(1)) {
@@ -187,12 +188,8 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -40px;
-    right: 80px;
+    left: 115px;
     z-index: -1;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: 0;
   }
 }
 

@@ -1,7 +1,7 @@
 .product {
   position: relative;
 
-  min-height: 266px; /*временно*/
+  min-height: 266px;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -9,13 +9,13 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    min-height: 372px; /*временно*/
-    padding-top: 80px;
-    padding-left: 55px;
-    padding-right: 270px;
+    min-height: 372px;
+    padding-top: 75px;
+    padding-left: 53px;
+    padding-right: 272px;
 
     &:last-child {
-      padding-right: 310px;
+      padding-right: 312px;
     }
   }
 
@@ -165,7 +165,7 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    margin-top: 22px;
+    margin-top: 25px;
 
     font-size: 16px;
     line-height: 24px;

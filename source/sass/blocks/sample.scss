@@ -1,9 +1,9 @@
 .sample {
   position: relative;
   min-height: 503px;
-  outline: 5px solid red;
 
   &::before {
+    /*фон для блока*/
     position: absolute;
     content: "";
     top: 0;
@@ -51,12 +51,15 @@
 .sample__wrapper {
   position: relative;
   min-height: 503px;
+  max-width: 320px; /*адаптив*/
+  margin: 0 auto; /*адаптив*/
   padding: 0 20px;
   padding-top: 30px;
 
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
     padding: 0 30px;
     padding-top: 53px;
 
@@ -65,7 +68,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
-    margin: 0 auto;
     padding: 0 40px;
     padding-top: 108px;
   }
@@ -106,7 +108,7 @@
   @media (min-width: $tablet-width) {
     min-width: 427px;
     margin-left: 90px;
-    margin-top: 45px;
+    margin-top: 42px;
 
     @include text-set (20px, 20px, $oswald);
     font-weight: 400;

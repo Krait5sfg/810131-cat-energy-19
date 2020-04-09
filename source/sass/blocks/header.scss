@@ -21,8 +21,9 @@
 .header__block {
   display: flex;
   align-items: center;
-  width: 100%;
-  margin: 0 auto;
+  // width: 100%; /*для резины */
+  max-width: 320px; /*для адаптива*/
+  margin: 0 auto; /*для адаптива*/
   min-height: 65px;
   padding-left: 20px;
   padding-right: 20px;
@@ -37,15 +38,17 @@
 
 .header__wrapper {
   @media (min-width: $tablet-width) {
-    width: 100%;
+    // width: 100%; /*для резины*/
+    max-width: $tablet-width; /*для адаптива*/
+    margin: 0 auto; /*для адаптива*/
     display: flex;
     padding: 0 30px;
     padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
-    margin: 0 auto;
+    max-width: $desktop-width; /*для адаптива*/
+    margin: 0 auto; /*для адаптива*/
     padding: 0 40px;
     padding-top: 50px;
   }
