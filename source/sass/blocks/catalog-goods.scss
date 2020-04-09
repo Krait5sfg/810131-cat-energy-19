@@ -12,6 +12,8 @@
 .catalog-goods__wrapper {
   /*работает для секции в целом начиная с планшета*/
   @media (min-width: $tablet-width) {
+    max-width: $tablet-width; /*адаптив*/
+    margin: 0 auto; /*адаптив*/
     padding: 0 30px;
     padding-top: 30px;
   }

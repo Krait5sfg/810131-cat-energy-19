@@ -5,9 +5,10 @@
   border-bottom: 1px solid #ededed;
 
   @media (min-width: $tablet-width) {
-    width: 45.76%;
+    // width: 45.76%; /*резина*/
+    width: 324px;
     height: 571px;
-    padding-top: 140px; /*смещает врапер вниз*/
+    padding-top: 139px; /*смещает врапер вниз*/
 
     border: none;
   }
@@ -39,12 +40,15 @@
 }
 
 .show-more__wrapper {
+  max-width: 320px; /*адаптив*/
+  margin: 0 auto; /*адаптив*/
   min-height: 209px;
   padding: 0 20px;
   padding-top: 80px;
 
   @media (min-width: $tablet-width) {
-    height: 431px;
+    width: auto;
+    height: 429px;
     padding: 0 37px;
     padding-top: 162px;
 
