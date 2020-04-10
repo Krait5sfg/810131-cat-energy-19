@@ -60,6 +60,12 @@
     margin-right: 95px;
     padding: 0;
   }
+
+  &--catalog-page {
+    @media (min-width: $tablet-width) {
+      padding-top: 4px;
+    }
+  }
 }
 
 .invitation__address {
@@ -83,6 +89,12 @@
     padding: 0;
 
     text-align: left;
+  }
+
+  &--catalog-page {
+    @media (min-width: $tablet-width) {
+      padding-top: 2px;
+    }
   }
 }
 
