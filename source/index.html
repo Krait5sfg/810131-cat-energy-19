@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="/js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -84,38 +85,43 @@
 
     <section class="example">
       <div class="example__wrapper">
-        <div class="example__container-text">
+        <div class="example__content">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-            часов
-            в день. </p>
-          <div class="example__container-list">
-            <ul class="example__list">
-              <li class="example__item improve">
-                <span class="improve__title">5 кг</span>
-                <span class="improve__text">снижение веса</span>
-              </li>
-              <li class="example__item improve">
-                <span class="improve__title">60 дней</span>
-                <span class="improve__text">затрачено
-                  времени</span>
-              </li>
-            </ul>
-            <p class="example__cost">Затраты на питание: 15 000 руб.</p>
-          </div>
+            часов в день. </p>
+          <ul class="example__list">
+            <li class="example__item">
+              <span class="example__feature-text example__feature-text--big">5 кг</span>
+              <span class="example__feature-text example__feature-text--small example__feature-text--sm-width">снижение
+                веса</span>
+            </li>
+            <li class="example__item">
+              <span class="example__feature-text example__feature-text--big">60 дней</span>
+              <span class="example__feature-text example__feature-text--small">затрачено
+                времени</span>
+            </li>
+          </ul>
+          <p class="example__cost-text">Затраты на питание: <span class="example__cost-number">15 000 руб.</span></p>
         </div>
-        <div class="slider-cat">
-          <img class="slider-cat__img" src="img/before-mobile@1x.png" alt="Кот Борис на старом питании" width="311"
-            height="232">
-          <img class="slider-cat__img hidden" src="img/after-mobile@1x.png" alt="Кот Борис на новом питании" width="311"
-            height="232">
-          <div class="slider-cat__toggle-container">
-            <button class="slider-cat__toggle-prev" type="button">Было</button>
-            <div class="slider-cat__condition">
-              <span class="slider-cat__condition-btn"></span>
+        <div class="example__slider slider">
+          <div class="slider__wrapper">
+            <div class="slider__slide slider__slide--before">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="/img/before-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="/img/before-tablet@1x.png">
+                <img class="slider__cat-img" src="/img/before-mobile@1x.png" alt="Кот до приема продуктов Кэт энерджи"
+                  width="320" height="240">
+              </picture>
             </div>
-            <button class="slider-cat__toggle-next" type="button">Стало</button>
+            <div class="slider__slide slider__slide--after hidden">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="/img/after-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="/img/after-tablet@1x.png">
+                <img class="slider__cat-img" src="/img/after-mobile@1x.png" alt="Кот после приема продуктов Кэт энерджи"
+                  width="320" height="240">
+              </picture>
+            </div>
           </div>
         </div>
       </div>

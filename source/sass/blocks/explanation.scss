@@ -81,6 +81,11 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     padding-right: 0;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
   }
 
   &--img-leaf {

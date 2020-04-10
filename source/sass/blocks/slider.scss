@@ -1,0 +1,39 @@
+.slider__wrapper {
+  /*выравнивает контент. боковые падинги в example__wrapper*/
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    padding: 0;
+    padding-top: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.slider__slide {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    //выравнивает изображение внутри слайдера для pixel perfect
+    padding-left: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 690px; /*такая ширина чтобы кот на десктопе попадал в pixel perfect*/
+  }
+}
+
+.slider__cat-img {
+  width: auto;
+  height: 100%;
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(-30px);
+  }
+}
