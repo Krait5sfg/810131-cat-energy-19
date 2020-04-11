@@ -47,7 +47,6 @@
   }
 }
 
-
 .sample__wrapper {
   position: relative;
   min-height: 503px;
@@ -123,16 +122,19 @@
 
 .sample__image {
   margin-top: 30px;
+  width: auto;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    left: 300px;
+    top: 225px;
+    left: 30px;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    top: 100px;
-    left: 650px;
+    top: -5px;
+    left: 490px;
   }
 }
 
