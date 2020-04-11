@@ -64,6 +64,8 @@
   background-repeat: no-repeat;
   background-color: transparent;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
