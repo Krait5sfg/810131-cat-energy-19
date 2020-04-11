@@ -1,13 +1,68 @@
 .social {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 62px;
+  width: 100%;
 
   @include list-reset;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    width: 125px;
+    padding-left: 28px; /*выравнивает элементы по горизонтали*/
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px; /*выравнивает элементы по вертикали*/
+  }
 }
 
 .social__item {
   &:not(:last-child) {
     margin-right: 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
+}
+
+.social__link {
+  display: block;
+}
+
+.social__img-vk {
+  fill: #666666;
+  transform: translate(-6px, 4px); /*выравнивает элемент на мобилке*/
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.social__img-inst {
+  fill: #666666;
+  transform: translate(-7px, 4px); /*выравнивает элемент на мобилке*/
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__img-fb {
+  fill: #666666;
+  transform: translate(-4px, 3px); /*выравнивает элемент на мобилке*/
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 28px;
   }
 }

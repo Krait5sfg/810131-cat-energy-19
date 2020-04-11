@@ -1,29 +1,106 @@
 .invitation {
+  position: relative;
+
   &--grey {
     background-color: #f2f2f2;
   }
 }
 
-.invitation__container {
+.invitation__wrapper {
   display: flex;
-  margin-left: 20px;
+  justify-content: space-between;
+  max-width: 320px; /*адаптив*/
+  margin: 0 auto; /*адаптив*/
+  padding: 0 20px;
+  padding-top: 30px;
+  min-height: 115px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    min-height: 200px;
+    padding: 0 30px;
+    padding-top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 98px;
+    left: 110px;
+    z-index: 1;
+
+    width: 570px;
+    padding-left: 75px;
+    padding-right: 85px;
+
+
+    background-color: #ffffff;
+  }
 }
 
 .invitation__title {
-  padding: 0;
   margin: 0;
-  max-width: 123px;
+  max-width: 140px;
 
   @include text-set (16px, 20px, $oswald);
   font-weight: 400;
   text-align: left;
   color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 207px;
+    padding-left: 40px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 170px;
+    margin-right: 95px;
+    padding: 0;
+  }
+
+  &--catalog-page {
+    @media (min-width: $tablet-width) {
+      padding-top: 4px;
+    }
+  }
 }
 
 .invitation__address {
-  max-width: 136px;
+  max-width: 140px;
 
   @include text-set (14px, 20px, $arial);
   text-align: left;
   font-style: normal;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    max-width: 207px;
+    padding-right: 40px;
+
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 170px;
+    padding: 0;
+
+    text-align: left;
+  }
+
+  &--catalog-page {
+    @media (min-width: $tablet-width) {
+      padding-top: 2px;
+    }
+  }
+}
+
+.invitation-city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
+  }
 }

@@ -1,19 +1,19 @@
 .main-catalog__wrapper {
-  max-width: 320px;
-  margin: auto;
+  max-width: 320px; /*адаптив*/
+  margin: 0 auto; /*адаптив*/
   padding: 0 20px;
-}
+  padding-top: 17px;
+  min-height: 103px; /*временно*/
 
-@media (min-width: $tablet-width) {
-  .main-catalog__wrapper {
+  @media (min-width: $tablet-width) {
     max-width: $tablet-width;
     padding: 0 30px;
+    padding-top: 52px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-catalog__wrapper {
+  @media (min-width: $desktop-width) {
     max-width: $desktop-width;
-    padding: 0 110px;
+    padding: 0 40px;
+    padding-top: 70px;
   }
 }

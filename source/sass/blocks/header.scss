@@ -1,16 +1,57 @@
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 320px;
-  margin: auto;
-  min-height: 65px;
-  padding-left: 20px;
-  padding-right: 20px;
+.header {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 65px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #eeeeee;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
-.header__logo {
-  margin-right: auto;
+.header__block {
+  display: flex;
+  align-items: center;
+  // width: 100%; /*для резины */
+  max-width: 320px; /*для адаптива*/
+  margin: 0 auto; /*для адаптива*/
+  height: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 222px;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+  }
+}
+
+.header__wrapper {
+  @media (min-width: $tablet-width) {
+    // width: 100%; /*для резины*/
+    max-width: $tablet-width; /*для адаптива*/
+    margin: 0 auto; /*для адаптива*/
+    display: flex;
+    padding: 0 30px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width; /*для адаптива*/
+    margin: 0 auto; /*для адаптива*/
+    padding: 0 40px;
+    padding-top: 50px;
+  }
 }
 
 .header__button {
@@ -22,30 +63,10 @@
   background-image: url("../img/icon-mobile-menu.png");
   background-repeat: no-repeat;
   background-color: transparent;
-}
 
-@media (min-width: $tablet-width) {
-  .header__container {
-    padding: 0;
-    width: auto;
-    margin: 0;
-  }
+  cursor: pointer;
 
-  .header__wrapper {
-    max-width: $tablet-width;
-    padding-left: 30px;
-    padding-right: 0;
-    margin: auto;
-  }
-
-  .header__button {
+  @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header__wrapper {
-    max-width: $desktop-width;
-    padding-left: 110px;
   }
 }

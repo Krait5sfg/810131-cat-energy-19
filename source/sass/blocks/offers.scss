@@ -1,21 +1,36 @@
 .offers__wrapper {
-  max-width: 320px;
-  margin: auto;
+  max-width: 320px; /*адаптив*/
+  margin: 0 auto;
   padding: 0 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .offers__wrapper {
-    max-width: 768px;
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: $desktop-width;
+    padding: 0 40px;
+    padding-top: 80px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .offers__wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1440px;
-    padding: 0 110px;
+.offers__product {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }

@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden; /*убирает выпадание кота на десктопе при сжатии экрана в 1300px*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .hidden {
   display: none;
 }

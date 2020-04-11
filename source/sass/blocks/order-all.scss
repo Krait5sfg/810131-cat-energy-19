@@ -1,15 +1,92 @@
+/*стилизация, размеры блока. Центрирование находится в additional__list*/
 .order-all {
-  width: 280px;
-  height: 289px;
+  min-height: 363px;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 345px;
+    padding-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    padding: 0;
+  }
+}
+
+.order-all__wrapper {
+  position: relative;
+  min-height: 289px;
+
+  color: #ffffff;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 289px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 29%;
+    left: 50%;
+
+    width: 55px;
+    height: 60px;
+
+    transform: translate(-50%, -29%);
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 83px;
+      left: 118px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 83px;
+      left: 122px;
+    }
+  }
 }
 
 .order-all__text {
-  width: 160px;
-  height: 56px;
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  width: 173px;
+  margin: 0;
+
+  transform: translate(-50%, -82%);
 
   @include text-set(16px, 20px, $arial);
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    top: 120px;
+    left: auto;
+    right: 25px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 189px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    text-align: center;
+  }
 }

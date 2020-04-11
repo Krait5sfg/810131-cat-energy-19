@@ -1,6 +1,3 @@
 .logo {
-  width: 191px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border: none; /*временно чтобы stylelint не ругался на пустой блок*/
 }

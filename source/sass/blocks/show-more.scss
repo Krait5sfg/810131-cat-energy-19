@@ -1,13 +1,69 @@
+.show-more {
+  position: relative;
+
+  height: 209px;
+
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    // width: 45.76%; /*резина*/
+    width: 324px;
+    height: 571px;
+    padding-top: 139px; /*смещает врапер вниз*/
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15%;
+    left: 50%;
+
+    transform: translate(-50%, -15%);
+    width: 30px;
+    height: 30px;
+
+    opacity: 0.2;
+    background-image: url("../img/icon-plus-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 38%;
+      left: 50%;
+
+      transform: translate(-50%, -38%);
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-plus.svg");
+    }
+  }
+}
+
 .show-more__wrapper {
-  max-width: 320px;
-  min-height: 210px;
-  margin: auto;
+  max-width: 320px; /*адаптив*/
+  margin: 0 auto; /*адаптив*/
+  min-height: 209px;
   padding: 0 20px;
+  padding-top: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 429px;
+    padding: 0 37px;
+    padding-top: 162px;
+
+    outline: 1px solid #e6e6e6;
+  }
 }
 
 .show-more__text {
   margin: 0;
-  padding: 0;
 
   @include text-set (16px, 20px, $oswald);
   font-weight: 400;
@@ -15,33 +71,36 @@
   color: #111111;
   text-transform: uppercase;
 
-  &--show-more {
-    margin: 0;
-    padding: 0;
+  @media (min-width: $tablet-width) {
+    width: 175px;
+    margin: 0 auto;
+
+    font-size: 20px;
+  }
+
+  &--small {
+    margin-top: 6px;
 
     @include text-set (12px, 16px, $oswald);
     font-weight: 400;
-    text-align: center;
     color: #444444;
+    letter-spacing: 1px;
+    text-transform: none;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 25px;
+
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 2px;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .show-more__wrapper {
-    width: 324px;
-    min-height: 574px;
-    padding: 0 38px;
-  }
+.show-more__button {
+  margin-top: 25px;
 
-  .show-more__container {
-    min-height: 433px;
-    width: 100%;
-    margin-top: auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .show-more__wrapper {
-    width: 245px;
+  @media (min-width: $tablet-width) {
+    margin-top: 90px;
   }
 }
