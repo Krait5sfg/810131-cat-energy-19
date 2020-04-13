@@ -31,10 +31,17 @@
 
     width: 570px;
     padding-left: 75px;
-    padding-right: 85px;
+    padding-right: 86px;
 
 
     background-color: #ffffff;
+  }
+
+  &--catalog {
+    //подправляет контент в catalog.html по pixel perfect
+    @media (min-width: $desktop-width) {
+      padding-top: 59px;
+    }
   }
 }
 
