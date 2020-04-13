@@ -103,6 +103,11 @@
       background-image: url("../img/advantage-leaf@1x.png"), linear-gradient(to bottom, #68b738, #68b738);
       background-position: 50% 50%;
       background-repeat: no-repeat;
+      //картинка для ретины
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-leaf@2x.png"), linear-gradient(to bottom, #68b738, #68b738);
+        background-size: 50px, 100%;
+      }
 
       @media (min-width: $tablet-width) {
         width: 80px;
@@ -126,6 +131,11 @@
       background-image: url("../img/advantage-powder@1x.png"), linear-gradient(to bottom, #68b738, #68b738);
       background-position: 50% 50%;
       background-repeat: no-repeat;
+      //картинка для ретины
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-powder@2x.png"), linear-gradient(to bottom, #68b738, #68b738);
+        background-size: 50px, 100%;
+      }
 
       @media (min-width: $tablet-width) {
         width: 80px;
@@ -149,6 +159,11 @@
       background-image: url("../img/advantage-dining@1x.png"), linear-gradient(to bottom, #68b738, #68b738);
       background-position: 50% 50%;
       background-repeat: no-repeat;
+      //картинка для ретины
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-dining@2x.png"), linear-gradient(to bottom, #68b738, #68b738);
+        background-size: 50px, 100%;
+      }
 
       @media (min-width: $tablet-width) {
         width: 80px;
@@ -172,6 +187,11 @@
       background-image: url("../img/advantage-clock@1x.png"), linear-gradient(to bottom, #68b738, #68b738);
       background-position: 50% 50%;
       background-repeat: no-repeat;
+      //картинка для ретины
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png"), linear-gradient(to bottom, #68b738, #68b738);
+        background-size: 50px, 100%;
+      }
 
       @media (min-width: $tablet-width) {
         width: 80px;

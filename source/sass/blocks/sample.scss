@@ -17,6 +17,11 @@
     background-image: url("../img/index-background-mobile.png"), linear-gradient(to bottom, #63a837, #63a837);
     background-repeat: no-repeat;
     background-position: center;
+    //ретина
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #63a837, #63a837);
+      background-size: 320px 305px, 100%;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -43,6 +48,11 @@
       background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to bottom, #63a837, #63a837);
       background-repeat: no-repeat;
       background-position: left;
+      //ретина
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to bottom, #63a837, #63a837);
+        background-size: contain, 100%;
+      }
     }
   }
 }
