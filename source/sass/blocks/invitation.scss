@@ -25,7 +25,8 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 98px;
-    left: 110px;
+    left: calc(50% - 610px);
+    // left: 110px;
     z-index: 1;
 
     width: 570px;
