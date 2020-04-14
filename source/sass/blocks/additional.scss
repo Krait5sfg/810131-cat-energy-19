@@ -6,21 +6,23 @@
     position: absolute;
     content: "";
     top: 44px;
-    left: calc(50% + 107px);
+    right: 0;
 
-    width: 100%;
+    width: calc(50% - 108px);
     height: 3px;
 
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
       top: 86px;
-      left: calc(50% + 56px);
+
+      width: calc(50% - 58px);
     }
 
     @media (min-width: $desktop-width) {
       top: 95px;
-      left: calc(50% - 237px);
+
+      width: calc(50% + 236px);
     }
   }
 
