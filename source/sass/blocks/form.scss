@@ -1,0 +1,11 @@
+.form__wrapper {
+  //работает только на десктопе, влияет на две верних формы, до этого работают враперы этих форм
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-top: 66px;
+  }
+}
