@@ -89,16 +89,15 @@
   width: 100%;
   min-height: 149px;
   margin-top: 35px;
-  padding-top: 13px;
-  padding-left: 16px;
+  padding-top: 12px;
+  padding-left: 15px;
 
   @include text-set(16px, 18px, $oswald);
   font-weight: 400;
   color: #444444;
   text-transform: uppercase;
 
-  border: none;
-  outline: 1px solid #cdcdcd;
+  border: 1px solid rgba($color: #cdcdcd, $alpha: 0.5);
   resize: none;
 
   @media (min-width: $tablet-width) {
@@ -107,7 +106,7 @@
     min-height: 173px;
     margin: 0 auto;
     margin-top: 77px;
-    padding-top: 10px;
+    padding-top: 9px;
     padding-left: 19px;
 
     font-size: 20px;
@@ -117,7 +116,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-top: 77px;
-    padding-left: 20px;
+    padding-left: 19px;
 
     width: 100%;
   }

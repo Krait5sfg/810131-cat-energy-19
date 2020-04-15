@@ -163,8 +163,7 @@
   color: #444444;
   text-transform: uppercase;
 
-  border: none;
-  outline: 1px solid #cdcdcd;
+  border: 1px solid rgba($color: #cdcdcd, $alpha: 0.5);
 
   &::-ms-clear {
     display: none;
@@ -205,5 +204,9 @@
     @media (min-width: $desktop-width) {
       margin-left: 16px;
     }
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
   }
 }
