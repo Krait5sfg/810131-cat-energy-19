@@ -14,6 +14,8 @@
   background-color: #68b738;
   border: none;
 
+  cursor: pointer;
+
   &--sample {
     font-size: 14px;
     line-height: 18px;
@@ -38,5 +40,25 @@
     color: #444444;
 
     background-color: #f2f2f2;
+  }
+
+  &--form {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 284px;
+      height: 52px;
+      padding-right: 5px; //выравнивает надпись в кнопке для pixelperfect
+      padding-top: 7px; //выравнивает надпись в кнопке для pixelperfect
+
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+      padding: 0;
+    }
   }
 }

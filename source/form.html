@@ -99,34 +99,42 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="form__fieldset-comment form-comment">
-          <h3 class="form-comment__title form-title">Комментарий</h3>
-          <textarea class="form-comment__textarea textarea" placeholder="Расскажите обо всех повадках кота"
-            aria-label="Комментарий"></textarea>
+        <div class="form__fieldset-comment form-comment">
+          <div class="form-comment__wrapper">
+            <h3 class="form-comment__title">Комментарий</h3>
+            <textarea class="form-comment__textarea" placeholder="Расскажите обо всех повадках кота"
+              aria-label="Комментарий"></textarea>
+          </div>
         </div>
         <div class="form__fieldset-additional form-additional">
-          <h3 class="form-additional__title form-title">Дополнительно</h3>
-          <ul class="form-additional__list">
-            <li class="form-additional__item">
-              <input class="input-checkbox" id="sug-substitute" type="checkbox" name="sug-substitute" checked>
-              <label for="sug-substitute">Сахарозаменитель</label>
-            </li>
-            <li class="form-additional__item">
-              <input class="input-checkbox" id="water" type="checkbox" name="water">
-              <label class="label" for="water">Питьевая вода</label>
-            </li>
-            <li class="form-additional__item">
-              <input class="input-checkbox" id="milk" type="checkbox" name="milk">
-              <label class="label" for="milk">Молоко</label>
-            </li>
-            <li class="form-additional__item">
-              <input class="input-checkbox" id="vitamins" type="checkbox" name="vitamins">
-              <label class="label" for="vitamins">Витамины</label>
-            </li>
-          </ul>
+          <div class="form-additional__wrapper">
+            <h3 class="form-additional__title">Дополнительно</h3>
+            <ul class="form-additional__list">
+              <li class="form-additional__item">
+                <input class="form-additional__input-checkbox visually-hidden" id="sug-substitute" type="checkbox"
+                  name="sug-substitute" checked>
+                <label class="form-additional__label" for="sug-substitute">Сахарозаменитель</label>
+              </li>
+              <li class="form-additional__item">
+                <input class="form-additional__input-checkbox visually-hidden" id="water" type="checkbox" name="water">
+                <label class="form-additional__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="form-additional__item">
+                <input class="form-additional__input-checkbox visually-hidden" id="milk" type="checkbox" name="milk">
+                <label class="form-additional__label" for="milk">Молоко</label>
+              </li>
+              <li class="form-additional__item">
+                <input class="form-additional__input-checkbox visually-hidden" id="vitamins" type="checkbox"
+                  name="vitamins">
+                <label class="form-additional__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </div>
         </div>
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <span class="form__notice">* — Обязательные поля</span> -->
+        <div class="form__btn-wrapper">
+          <button class="form__button button button--form" type="submit">Отправить заявку</button>
+          <span class="form__notice">* — Обязательные поля</span>
+        </div>
       </form>
       <!-- конец формы -->
     </section>

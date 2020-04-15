@@ -1,0 +1,124 @@
+.form-comment {
+  position: relative;
+
+  //линия справа от титула
+  &::after {
+    position: absolute;
+    content: "";
+    top: 42px;
+    right: 0;
+
+    width: calc(50% - 3px);
+    height: 3px;
+
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      top: 88px;
+
+      width: calc(50% + 95px);
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 89px;
+
+      width: calc(50% + 392px);
+    }
+  }
+  //линия слева от титула
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      top: 88px;
+      left: 0;
+
+      width: calc(50% - 354px);
+      height: 3px;
+
+      background-color: #68b738;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 89px;
+
+      width: calc(50% - 650px);
+    }
+  }
+}
+
+.form-comment__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    padding: 0 30px;
+    padding-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    padding: 0 40px;
+    padding-top: 67px;
+  }
+}
+
+.form-comment__title {
+  margin: 0;
+
+  @include text-set(24px, 24px, $oswald);
+  font-weight: 400;
+  color: #111111;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.form-comment__textarea {
+  width: 100%;
+  min-height: 149px;
+  margin-top: 35px;
+  padding-top: 13px;
+  padding-left: 16px;
+
+  @include text-set(16px, 18px, $oswald);
+  font-weight: 400;
+  color: #444444;
+  text-transform: uppercase;
+
+  border: none;
+  outline: 1px solid #cdcdcd;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 628px;
+    min-height: 173px;
+    margin: 0 auto;
+    margin-top: 77px;
+    padding-top: 10px;
+    padding-left: 19px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 77px;
+    padding-left: 20px;
+
+    width: 100%;
+  }
+}
