@@ -68,10 +68,20 @@
     margin-right: 95px;
     padding: 0;
   }
-
+  //код ниже для pixelperfect
   &--catalog-page {
     @media (min-width: $tablet-width) {
       padding-top: 4px;
+    }
+  }
+
+  &--form-page {
+    @media (min-width: $tablet-width) {
+      padding-top: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
     }
   }
 }
@@ -98,10 +108,22 @@
 
     text-align: left;
   }
-
+  //код ниже для pixelperfect
   &--catalog-page {
     @media (min-width: $tablet-width) {
       padding-top: 2px;
+    }
+  }
+
+  &--form-page {
+    @media (min-width: $tablet-width) {
+      padding-top: 1px;
+      padding-right: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      transform: translateY(-2px);
     }
   }
 }
