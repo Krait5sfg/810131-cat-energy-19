@@ -1,3 +1,35 @@
 .logo {
-  border: none; /*временно чтобы stylelint не ругался на пустой блок*/
+  position: relative;
+
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  //для работы active в IE11
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+.logo__image {
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }

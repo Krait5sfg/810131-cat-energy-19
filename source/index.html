@@ -15,7 +15,11 @@
     <div class="header__wrapper">
       <div class="header__block">
         <a class="header__logo logo" href="">
-          <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="39">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="39">
+          </picture>
         </a>
         <button class="header__button" type="button" aria-label="Меню сайта"></button>
       </div>
@@ -39,7 +43,8 @@
         <picture>
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-          <img class="sample__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy pro с курицей" width="280" />
+          <img class="sample__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+            alt="Cat Energy pro с курицей" width="280" />
         </picture>
         <a class="sample__button button button--sample" href="form.html">Подобрать программу</a>
       </div>
@@ -114,16 +119,16 @@
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="slider__cat-img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до приема продуктов Кэт энерджи"
-                  width="320" height="240">
+                <img class="slider__cat-img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+                  alt="Кот до приема продуктов Кэт энерджи" width="320" height="240">
               </picture>
             </div>
             <div class="slider__slide slider__slide--after hidden">
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="slider__cat-img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот после приема продуктов Кэт энерджи"
-                  width="320" height="240">
+                <img class="slider__cat-img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+                  alt="Кот после приема продуктов Кэт энерджи" width="320" height="240">
               </picture>
             </div>
             <div class="slider__toggles-container">
