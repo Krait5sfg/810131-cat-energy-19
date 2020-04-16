@@ -15,10 +15,6 @@
     padding-left: 28px; /*выравнивает элементы по горизонтали*/
     border: none;
   }
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 5px; /*выравнивает элементы по вертикали*/
-  }
 }
 
 .social__item {

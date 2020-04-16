@@ -1,0 +1,128 @@
+.form-cat-name {
+  @include list-reset;
+}
+
+.form-cat-name__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 41px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    padding: 0 30px;
+    padding-top: 67px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 0;
+  }
+}
+
+.form-cat-name__list {
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 41px;
+    padding-right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-left: 2px;
+  }
+}
+
+.form-cat-name__item {
+  display: flex;
+  align-items: center;
+
+  &:nth-child(2) {
+    margin-top: 14px;
+  }
+
+  &:nth-child(3) {
+    margin-top: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      margin-top: 21px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 21px;
+    }
+  }
+}
+
+.form-cat-name__label {
+  @include text-set(16px, 18px, $oswald);
+  font-weight: 400;
+  text-align: left;
+  color: #222222;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &--name {
+    margin-right: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 17px;
+    }
+  }
+
+  &--weight {
+    margin-right: 17px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
+  }
+
+  &--age {
+    margin-right: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 17px;
+    }
+  }
+}
+
+.form-cat-name__input {
+  height: 44px;
+  width: 100%;
+  padding-left: 15px;
+
+  @include text-set(16px, 18px, $oswald);
+  font-weight: 400;
+  text-align: left;
+  color: #444444;
+  text-transform: uppercase;
+
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+
+  &::-ms-clear {
+    display: none; //убирает крести сброса текста в ie11
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 51px;
+    padding-left: 18px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+}

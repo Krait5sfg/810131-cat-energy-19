@@ -1,0 +1,69 @@
+.form__wrapper {
+  //работает только на десктопе, влияет на две верних формы, до этого работают враперы этих форм
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-top: 66px;
+  }
+}
+
+//работает только для кнопки формы и строки "Обязательное поле
+.form__btn-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 39px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    max-width: $tablet-width;
+    padding: 0 30px;
+    padding-top: 34px;
+    padding-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    justify-content: space-between;
+    padding: 0 40px;
+    padding-top: 69px;
+    padding-bottom: 81px;
+  }
+}
+
+.form__notice {
+  display: block;
+  margin: 0 auto;
+  margin-top: 21px;
+
+  @include text-set(14px, 16px, $arial);
+  text-align: center;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 60px;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    text-align: left;
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet-width) {
+    margin-left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}

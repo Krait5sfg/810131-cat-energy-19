@@ -80,6 +80,10 @@
     justify-content: center;
     height: 208px;
   }
+
+  @media (min-width: $tablet-width) {
+    top: 56px;
+  }
 }
 
 .catalog-product__img {

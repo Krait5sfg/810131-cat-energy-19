@@ -10,6 +10,22 @@
   @media (min-width: $tablet-width) {
     width: 162px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 6px;
+  }
+
+  &--catalog-page {
+    @media (min-width: $tablet-width) {
+      padding-top: 5px; //для pixel perfect
+    }
+  }
+
+  &--form-page {
+    @media (min-width: $tablet-width) {
+      padding-top: 5px; //для pixel perfect
+    }
+  }
 }
 
 .academy-links__text {

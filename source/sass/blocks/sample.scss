@@ -17,6 +17,11 @@
     background-image: url("../img/index-background-mobile.png"), linear-gradient(to bottom, #63a837, #63a837);
     background-repeat: no-repeat;
     background-position: center;
+    //ретина
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #63a837, #63a837);
+      background-size: 320px 305px, 100%;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -42,7 +47,12 @@
 
       background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to bottom, #63a837, #63a837);
       background-repeat: no-repeat;
-      background-position: right;
+      background-position: left;
+      //ретина
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to bottom, #63a837, #63a837);
+        background-size: contain, 100%;
+      }
     }
   }
 }
@@ -53,7 +63,7 @@
   max-width: 320px; /*адаптив*/
   margin: 0 auto; /*адаптив*/
   padding: 0 20px;
-  padding-top: 30px;
+  padding-top: 28px;
 
   text-align: center;
 
@@ -83,7 +93,7 @@
   @media (min-width: $tablet-width) {
     min-width: 427px;
     margin: 0;
-    margin-left: 90px;
+    margin-left: 88px;
 
     @include text-set (60px, 60px, $oswald);
     font-weight: 400;
@@ -97,7 +107,7 @@
 
 .sample__text {
   margin: 0;
-  margin-top: 22px;
+  margin-top: 25px;
 
   @include text-set (14px, 14px, $oswald);
   font-weight: 400;
@@ -106,7 +116,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 427px;
-    margin-left: 90px;
+    margin-left: 88px;
     margin-top: 42px;
 
     @include text-set (20px, 20px, $oswald);
@@ -121,7 +131,7 @@
 }
 
 .sample__image {
-  margin-top: 30px;
+  margin-top: 28px;
   width: auto;
   height: auto;
 
@@ -141,11 +151,11 @@
 .sample__button {
   @media (min-width: $tablet-width) {
     margin-top: 47px;
-    margin-left: 90px;
+    margin-left: 88px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
-    margin-left: 80px;
+    margin-top: 52px;
+    margin-left: 79px;
   }
 }

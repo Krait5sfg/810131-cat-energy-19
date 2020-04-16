@@ -5,7 +5,6 @@
 @import "general/mixins.scss";
 @import "general/common.scss";
 /*index*/
-@import "blocks/wrapper.scss";
 @import "blocks/button.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
@@ -31,3 +30,12 @@
 @import "blocks/additional.scss";
 @import "blocks/additional-product.scss";
 @import "blocks/order-all.scss";
+/*form page*/
+@import "blocks/form-main.scss";
+@import "blocks/form-section.scss";
+@import "blocks/form.scss";
+@import "blocks/form-cat-name.scss";
+@import "blocks/form-radio.scss";
+@import "blocks/form-owner.scss";
+@import "blocks/form-comment.scss";
+@import "blocks/form-additional.scss";

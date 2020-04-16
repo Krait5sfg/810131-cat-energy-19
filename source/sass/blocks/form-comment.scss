@@ -1,124 +1,123 @@
-.additional {
+.form-comment {
   position: relative;
 
   //линия справа от титула
   &::after {
     position: absolute;
     content: "";
-    top: 44px;
+    top: 42px;
     right: 0;
 
-    width: calc(50% - 108px);
+    width: calc(50% - 3px);
     height: 3px;
 
     background-color: #68b738;
 
     @media (min-width: $tablet-width) {
-      top: 86px;
+      top: 88px;
 
-      width: calc(50% - 58px);
+      width: calc(50% + 95px);
     }
 
     @media (min-width: $desktop-width) {
-      top: 95px;
+      top: 89px;
 
-      width: calc(50% + 236px);
+      width: calc(50% + 392px);
     }
   }
-
   //линия слева от титула
   &::before {
     @media (min-width: $tablet-width) {
       position: absolute;
       content: "";
-      top: 86px;
+      top: 88px;
       left: 0;
 
-      width: calc(50% - 355px);
+      width: calc(50% - 354px);
       height: 3px;
 
       background-color: #68b738;
     }
 
     @media (min-width: $desktop-width) {
-      top: 95px;
+      top: 89px;
 
       width: calc(50% - 650px);
     }
   }
 }
 
-.additional__title-wrapper {
+.form-comment__wrapper {
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 32px;
+  padding-top: 29px;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
     padding: 0 30px;
-    padding-top: 64px;
+    padding-top: 66px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     padding: 0 40px;
-    padding-top: 72px;
+    padding-top: 67px;
   }
 }
 
-.additional__wrapper {
-  /* влияет на секцию в целом */
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    max-width: $desktop-width;
-    padding: 0 40px;
-    padding-top: 80px;
-    padding-bottom: 30px;
-  }
-}
-
-.additional__title {
+.form-comment__title {
   margin: 0;
 
-  @include text-set (24px, 24px, $oswald);
+  @include text-set(24px, 24px, $oswald);
   font-weight: 400;
-  text-align: left;
   color: #111111;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
-    width: 410px;
-
     font-size: 36px;
     line-height: 36px;
-    text-align: center;
+    padding-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
+    padding: 0;
   }
 }
 
-.additional__list {
-  @include list-reset;
-  padding-top: 32px;
+.form-comment__textarea {
+  width: 100%;
+  min-height: 149px;
+  margin-top: 35px;
+  padding-top: 12px;
+  padding-left: 15px;
+
+  @include text-set(16px, 18px, $oswald);
+  font-weight: 400;
+  color: #444444;
+  text-transform: uppercase;
+
+  border: 1px solid rgba($color: #cdcdcd, $alpha: 0.5);
+  resize: none;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
+    display: block;
+    width: 628px;
+    min-height: 173px;
+    margin: 0 auto;
+    margin-top: 77px;
+    padding-top: 9px;
+    padding-left: 19px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 895px;
-    padding: 0;
+    margin: 0;
+    margin-top: 77px;
+    padding-left: 19px;
+
+    width: 100%;
   }
 }
