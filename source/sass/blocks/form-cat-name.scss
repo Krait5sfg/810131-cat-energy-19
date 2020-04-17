@@ -138,6 +138,7 @@
   }
 
   &:invalid {
+    box-shadow: none; //убирает тень в Firefox
     border: 2px solid #ff8282;
     padding-left: 14px;
 
