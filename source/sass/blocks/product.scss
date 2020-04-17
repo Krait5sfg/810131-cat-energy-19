@@ -190,6 +190,8 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  user-select: none;
+
   @media (min-width: $tablet-width) {
     margin-top: 40px;
 
@@ -234,5 +236,25 @@
     @media (min-width: $desktop-width) {
       left: 132px;
     }
+  }
+
+  &:hover::after,
+  &:focus::after {
+    min-width: 34px;
+    min-height: 12px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active::after {
+    min-width: 34px;
+    min-height: 12px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
   }
 }
