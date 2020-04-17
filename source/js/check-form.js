@@ -16,6 +16,5 @@ btnForm.addEventListener("click", function (evt) {
   });
   if (flag === 4) {
     evt.preventDefault();
-    alert("Незаполнены обязательные поля формы");
   }
 });
