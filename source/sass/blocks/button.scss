@@ -29,11 +29,31 @@
       @include text-set (20px, 20px, $oswald);
       font-weight: 400;
     }
+
+    &:hover,
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
+    }
   }
 
   &--catalog {
     font-size: 16px;
     line-height: 20px;
+
+    &:hover,
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
+    }
   }
 
   &--show-more {
@@ -71,6 +91,16 @@
     @media (min-width: $desktop-width) {
       width: 570px;
       padding: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
     }
   }
 }
