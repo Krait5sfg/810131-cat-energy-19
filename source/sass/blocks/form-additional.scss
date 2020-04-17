@@ -200,7 +200,8 @@
     line-height: 20px;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border: 1px solid #bababa;
   }
 
