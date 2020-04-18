@@ -15,13 +15,18 @@
 
 .menu__item {
   min-height: 66px;
-  padding-top: 22px;
+  padding-top: 24px;
   text-align: center;
 
   border-bottom: 2px solid #eeeeee;
 
   @media (min-width: $tablet-width) {
+    padding-top: 22px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
   }
 }
 

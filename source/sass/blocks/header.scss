@@ -59,11 +59,13 @@
   width: 25px;
   height: 19px;
   margin-left: auto;
+  padding: 0;
 
   border: none;
-  background-image: url("../img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  background-position: center;
 
   cursor: pointer;
 
