@@ -3,7 +3,8 @@
 
   display: block;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 

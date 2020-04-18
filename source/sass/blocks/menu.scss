@@ -32,6 +32,15 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover,
+  &:focus {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     @include text-set(18px, 25px, $oswald);
     font-weight: 400;
@@ -48,5 +57,43 @@
     @media (min-width: $desktop-width) {
       color: #111111;
     }
+  }
+  //для меню на главной странице только при десктопе
+  &--white {
+    @media (min-width: $desktop-width) {
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  &--active-menu {
+    position: relative;
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        position: absolute;
+        content: "";
+        z-index: 2;
+        top: 33px;
+        left: 0;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: #68b738;
+      }
+    }
+  }
+}
+
+.menu__link--white.menu__link--active-menu::before {
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
   }
 }
