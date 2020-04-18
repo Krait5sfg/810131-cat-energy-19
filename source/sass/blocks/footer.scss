@@ -1,5 +1,6 @@
 .footer {
   background-color: #f2f2f2;
+  overflow: hidden; //убирает пустое просранство внизу футера в ie11
 }
 
 .footer__wrapper {

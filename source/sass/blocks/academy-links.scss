@@ -55,6 +55,8 @@
 }
 
 .academy-links__text {
+  margin-right: auto; //прижимает блок влево на мобилке в ie11
+
   @include text-set (16px, 16px, $arial);
   text-align: left;
   color: #444444;
