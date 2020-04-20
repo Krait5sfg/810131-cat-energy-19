@@ -5,11 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="js/picturefill.min.js" async></script>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 
 <body>
+
+  <div class="hidden">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="header">
     <div class="header__wrapper">
@@ -52,7 +56,7 @@
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
           <img class="sample__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
-            alt="Cat Energy pro с курицей" width="280" />
+            alt="Cat Energy pro с курицей" width="280">
         </picture>
         <a class="sample__button button button--sample" href="form.html">Подобрать программу</a>
       </div>
@@ -186,21 +190,21 @@
         <li class="social__item">
           <a class="social__link" href="https://vk.com" target="_blank">
             <svg class="social__img-vk">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://instagram.com" target="_blank">
             <svg class="social__img-inst">
-              <use xlink:href="img/sprite.svg#icon-inst"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://facebook.com" target="_blank">
             <svg class="social__img-fb">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -208,7 +212,7 @@
       <a class="footer__link-academy academy-links" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="academy-links__text">HTML Academy</span>
         <svg class="academy-links__img">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </div>
@@ -216,7 +220,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=c44859d8-d87b-4b60-aa9e-429e15f7d631&lang=ru_RU"></script>
   <script src="js/yandex-map.js"></script>
   <!-- полифил для работы svg спрайтов в ie11 -->
-  <script src="js/svgxuse.js" defer></script>
+  <script src="js/svgxuse.js" defer=""></script>
 </body>
 
 </html>

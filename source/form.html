@@ -5,11 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи | Форма подбора программы</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="js/picturefill.min.js" async></script>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 
 <body>
+
+  <div class="hidden">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="header">
     <div class="header__wrapper">
@@ -72,7 +76,7 @@
               <ul class="form-radio__list">
                 <li class="form-radio__item">
                   <input class="form-radio__input-radio visually-hidden" type="radio" name="for-what" id="lose-weidht"
-                    value="Похудение" checked>
+                    value="Похудение" checked="">
                   <label class="form-radio__label" for="lose-weidht">Похудение</label>
                 </li>
                 <li class="form-radio__item">
@@ -99,7 +103,7 @@
                 <input class="form-owner__input form-owner__input--email check-form-js" id="email" type="email"
                   name="email" placeholder="kuklachev@gmail.com">
                 <svg class="form-owner__icon form-owner__icon--mail">
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  <use xlink:href="#icon-mail"></use>
                 </svg>
               </li>
               <li class="form-owner__item">
@@ -108,7 +112,7 @@
                   name="phone-number" placeholder="8 (960) 900-60-90"
                   pattern="[0-9]\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
                 <svg class="form-owner__icon form-owner__icon--phone">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  <use xlink:href="#icon-phone"></use>
                 </svg>
               </li>
             </ul>
@@ -127,7 +131,7 @@
             <ul class="form-additional__list">
               <li class="form-additional__item">
                 <input class="form-additional__input-checkbox visually-hidden" id="sug-substitute" type="checkbox"
-                  name="sug-substitute" checked>
+                  name="sug-substitute" checked="">
                 <label class="form-additional__label" for="sug-substitute">Сахарозаменитель</label>
               </li>
               <li class="form-additional__item">
@@ -177,21 +181,21 @@
         <li class="social__item">
           <a class="social__link" href="https://vk.com" target="_blank">
             <svg class="social__img-vk">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://instagram.com" target="_blank">
             <svg class="social__img-inst">
-              <use xlink:href="img/sprite.svg#icon-inst"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://facebook.com" target="_blank">
             <svg class="social__img-fb">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -200,7 +204,7 @@
         href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="academy-links__text">HTML Academy</span>
         <svg class="academy-links__img">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </div>
@@ -208,7 +212,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=c44859d8-d87b-4b60-aa9e-429e15f7d631&lang=ru_RU"></script>
   <script src="js/yandex-map.js"></script>
   <!-- полифил для работы svg спрайтов в ie11 -->
-  <script src="js/svgxuse.js" defer></script>
+  <script src="js/svgxuse.js" defer=""></script>
   <script src="js/fix-color-change.js"></script>
   <script src="js/check-form.js"></script>
 </body>
