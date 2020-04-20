@@ -107,11 +107,12 @@
   color: #444444;
   text-transform: uppercase;
 
-  border: 1px solid rgba(205, 205, 205, 0.5);
+  border: 1px solid rgba($color: #cdcdcd, $alpha: 0.5);
+  outline: none;
 
 
   &::-ms-clear {
-    display: none; //убирает крести сброса текста в ie11
+    display: none; //убирает крестик сброса текста в ie11
   }
 
   @media (min-width: $tablet-width) {
@@ -122,7 +123,27 @@
     line-height: 20px;
   }
 
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid #444444;
+    padding-left: 14px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 17px;
+    }
+  }
+
   &:invalid {
+    box-shadow: none; //убирает тень в Firefox
     border: 2px solid #ff8282;
+    padding-left: 14px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 17px;
+    }
   }
 }

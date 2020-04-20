@@ -5,7 +5,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 44px;
+    top: 42px;
     right: 0;
 
     width: calc(50% - 108px);
@@ -52,7 +52,7 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 32px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
@@ -111,7 +111,7 @@
 
 .additional__list {
   @include list-reset;
-  padding-top: 32px;
+  padding-top: 34px;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;

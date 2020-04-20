@@ -193,8 +193,42 @@
   text-align: left;
   text-transform: uppercase;
 
+  cursor: pointer;
+  user-select: none;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
+
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    color: rgba($color: #222222, $alpha: 0.3);
+  }
+
+  &:active::before {
+    opacity: 0.3;
+    border: 1px solid #bababa;
+  }
+}
+
+//эффекты на случай если по форме передвигаются с помощью клавиатуры
+.form-additional__input-checkbox:checked:focus + label::before,
+.form-additional__input-checkbox:focus + label::before {
+  border: 1px solid #bababa;
+}
+
+.form-additional__input-checkbox:checked:active + label::before,
+.form-additional__input-checkbox:active + label::before {
+  border: 1px solid #bababa;
+  opacity: 0.3;
+}
+
+.form-additional__input-checkbox:checked:active + label,
+.form-additional__input-checkbox:active + label {
+  color: rgba(34, 34, 34, 0.3);
 }

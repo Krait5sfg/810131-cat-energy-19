@@ -105,6 +105,10 @@
   }
 }
 
+.form-radio__input-radio:focus + .form-radio__label::before {
+  border: 1px solid #bababa;
+}
+
 .form-radio__label {
   @include text-set(16px, 18px, $oswald);
   font-weight: 400;
@@ -112,8 +116,28 @@
   color: #222222;
   text-transform: uppercase;
 
+  cursor: pointer;
+  user-select: none;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  &:hover::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+    border: 1px solid #bababa;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: rgba($color: #222222, $alpha: 0.3);
   }
 }

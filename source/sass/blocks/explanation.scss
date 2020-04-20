@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     padding: 0 40px;
-    padding-top: 70px;
+    padding-top: 73px;
   }
 }
 
@@ -45,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 75px;
+    margin-top: 72px;
   }
 }
 
@@ -60,12 +60,15 @@
     margin-top: 20px;
   }
 
+  &:nth-child(3) {
+    margin-top: 18px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 45.8%;
     min-height: 286px;
-    // margin-bottom: 30px;
     padding-left: 0;
-    padding-top: 110px;
+    padding-top: 111px;
     padding-right: 70px;
 
     &:nth-child(1n) {

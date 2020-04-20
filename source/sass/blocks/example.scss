@@ -45,7 +45,7 @@
     max-width: $tablet-width;
     margin: 0 auto;
     padding: 0 30px;
-    padding-top: 45px;
+    padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,7 +75,7 @@
 .example__text {
   width: 266px;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 23px;
 
   @include text-set(14px, 18px, $arial);
   text-align: left;
@@ -83,7 +83,7 @@
 
   @media (min-width: $tablet-width) {
     width: 96%;
-    margin-top: 62px;
+    margin-top: 64px;
 
     font-size: 16px;
     line-height: 24px;
@@ -91,7 +91,7 @@
 
   @media (min-width: $desktop-width) {
     width: 435px;
-    margin-top: 145px;
+    margin-top: 147px;
   }
 }
 
@@ -108,14 +108,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 69px;
+    margin-top: 67px;
   }
 }
 
 .example__item {
   width: 124px;
   height: 56px;
-  padding-top: 15px;
+  padding-top: 13px;
 
   border-radius: 5px;
   border: 1px solid #cdcdcd;
@@ -123,6 +123,7 @@
   @media (min-width: $tablet-width) {
     width: 162px;
     height: 72px;
+    padding-top: 14px;
   }
 }
 
@@ -144,8 +145,9 @@
   &--small {
     width: 87px;
     margin: 0 auto;
-    margin-top: 7px;
+    margin-top: 9px;
     padding: 0 10px;
+    padding-right: 12px;
 
     @include text-set(12px, 12px, $arial);
     text-align: center;
@@ -155,7 +157,7 @@
 
     @media (min-width: $tablet-width) {
       width: 142px;
-      margin-top: 10px;
+      margin-top: 11px;
       padding: 0;
 
       font-size: 14px;
