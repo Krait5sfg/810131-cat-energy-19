@@ -80,8 +80,8 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer() //добавляет префиксы
     ]))
-    .pipe(csso()) //минимизирует css
     .pipe(gulp.dest("build/css")) //неминимизированный css
+    .pipe(csso()) //минимизирует css
     .pipe(rename("style.min.css")) //переименовывает css в style.min.css
     .pipe(sourcemap.write(".")) //Записывает карты кода в тек. папку
     .pipe(gulp.dest("build/css")) //копирует css файл в папку build/css
