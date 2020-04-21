@@ -55,7 +55,7 @@ gulp.task("sprite", function () {
 
 //делает из png jpg файлов файлы в формате webp
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png, jpg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img"));
 })
@@ -81,6 +81,7 @@ gulp.task("css", function () {
       autoprefixer() //добавляет префиксы
     ]))
     .pipe(csso()) //минимизирует css
+    .pipe(gulp.dest("build/css")) //неминимизированный css
     .pipe(rename("style.min.css")) //переименовывает css в style.min.css
     .pipe(sourcemap.write(".")) //Записывает карты кода в тек. папку
     .pipe(gulp.dest("build/css")) //копирует css файл в папку build/css
