@@ -1,3 +1,17 @@
+.menu {
+
+  //класс для закрытия меню если нужна реализация на js
+  &--close {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &--no-js {
+    display: block;
+  }
+}
+
 .menu__list {
   @include list-reset;
 

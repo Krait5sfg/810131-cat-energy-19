@@ -62,7 +62,6 @@
   padding: 0;
 
   border: none;
-  background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
@@ -70,6 +69,18 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--close {
+    background-image: url("../img/icon-close.svg");
+  }
+
+  &--open {
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
+
+  &--no-js {
     display: none;
   }
 }

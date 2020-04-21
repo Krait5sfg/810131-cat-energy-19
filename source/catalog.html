@@ -25,9 +25,15 @@
             <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="39">
           </picture>
         </a>
-        <button class="header__button hidden" type="button" aria-label="Меню сайта"></button>
+        <!-- header__button-/-close - кнопка с крестиком, header__button-/-open - кнопка гамбургер -->
+        <!-- при подключенном js класс header__button-/-no-js удаляется -->
+        <button class="header__button header__button--close header__button--no-js" type="button"
+          aria-label="Меню сайта"></button>
       </div>
-      <nav class="header__main-menu menu">
+      <!-- menu-/-close класс отвечающий за включение и выключение меню на мобильной версии.
+      при реализации меню на js добавлять и удалять класс menu-/-close в блоке menu-->
+      <!-- при подключенном js класс menu-/-no-js удаляется -->
+      <nav class="header__main-menu menu menu--no-js">
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link menu__link--black" href="index.html">Главная</a></li>
           <li class="menu__item"><a class="menu__link menu__link--black menu__link--active-menu">Каталог
