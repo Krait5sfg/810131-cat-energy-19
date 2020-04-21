@@ -16,7 +16,7 @@ function init() {
     },
     {
       iconLayout: "default#image",
-      iconImageHref: "/img/map-pin.png",
+      iconImageHref: "img/map-pin.png",
       iconImageSize: iconSize,
       iconImageOffset: [-30, -30],
     });
