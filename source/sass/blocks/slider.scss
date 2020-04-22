@@ -1,12 +1,26 @@
+.slider {
+  // outline: 1px solid black;
+  min-height: 325px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 631px;
+
+    background-image: linear-gradient(to bottom, #ffffff 168px, transparent 168px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    border-top: 1px solid #ffffff; //исправляет баг с появлением линии сверху при уменьшении маштаба страницы.
+  }
+}
+
 .slider__wrapper {
   /*выравнивает контент. боковые падинги в example__wrapper*/
+  position: relative;
+
   max-width: 320px;
   margin: 0 auto;
   padding-top: 35px;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
-    padding: 0;
+    padding: 0 30px;
     padding-top: 85px;
   }
 
@@ -16,22 +30,57 @@
 }
 
 .slider__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #f2f2f2;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    //выравнивает изображение внутри слайдера для pixel perfect
-    padding-left: 14px;
+    min-height: inherit;
+
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     width: 690px; /*такая ширина чтобы кот на десктопе попадал в pixel perfect*/
   }
+
+  &--before {
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      left: 46px;
+
+      width: 44%;
+
+      background-image: linear-gradient(to bottom, #ffffff 168px, transparent 168px), linear-gradient(to right, transparent, #f2f2f2 99.8%, #f2f2f2 99.8%, transparent);
+    }
+  }
+
+  &--after {
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      left: 46px;
+      width: 80%;
+
+      background-image: linear-gradient(to bottom, #ffffff 168px, transparent 168px), linear-gradient(to right, transparent 2%, transparent 2%, #eaeaea 98%, #eaeaea 98%, transparent);
+    }
+  }
 }
 
 .slider__cat-img {
-  width: auto;
+  // width: auto;
+  width: 100%;
   height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    max-width: inherit;
+  }
 
   @media (min-width: $desktop-width) {
     transform: translateY(-30px);
@@ -40,16 +89,22 @@
 
 /*управление слайдером*/
 .slider__toggles-container {
+  position: absolute;
+  top: 272px;
+  left: 50%;
+  z-index: 3;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 200px;
-  margin: 0 auto;
-  margin-top: 28px;
+
+  transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
+    top: 535px;
+
     width: 576px;
-    margin-top: 15px;
   }
 
   @media (min-width: $desktop-width) {

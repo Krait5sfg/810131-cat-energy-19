@@ -6,7 +6,8 @@
     min-height: 1083px;
 
     border-top: 1px solid #e6e6e6;
-    background-image: linear-gradient(to bottom, #ffffff 619px, #eaeaea 619px);
+    // background-image: linear-gradient(to bottom, #ffffff 619px, #eaeaea 619px);
+    background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,13 +24,16 @@
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 17px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+    max-width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-top: 43px;
+    padding-bottom: 86px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,12 +45,6 @@
 
 .example__wrapper {
   /*работает начиная с планшета*/
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-    margin: 0 auto;
-    padding: 0 30px;
-    padding-top: 43px;
-  }
 
   @media (min-width: $desktop-width) {
     display: flex;
