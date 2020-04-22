@@ -6,15 +6,14 @@
     min-height: 1083px;
 
     border-top: 1px solid #e6e6e6;
-    // background-image: linear-gradient(to bottom, #ffffff 619px, #eaeaea 619px);
     background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 620px; /*временно высота заглушки*/
+    min-height: 620px;
 
     border: none;
-    background-image: linear-gradient(to bottom, #ffffff 159px, #f2f2f2 159px);
+    background-image: linear-gradient(to bottom, #ffffff 189px, rgba(255, 255, 255, 0) 189px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 }
 
@@ -39,18 +38,19 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     min-width: 570px;
-    padding-top: 24px;
+    margin: 0;
+    padding: 0;
+    padding-top: 55px;
   }
 }
 
 .example__wrapper {
-  /*работает начиная с планшета*/
-
+  /*работает начиная с десктопа*/
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
     max-width: $desktop-width;
     padding: 0 40px;
+    margin: 0 auto;
   }
 }
 
