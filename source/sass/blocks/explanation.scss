@@ -83,6 +83,9 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+
+    min-height: 255px; //test
+
     padding-right: 0;
 
     &:nth-child(1),

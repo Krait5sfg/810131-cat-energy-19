@@ -5,27 +5,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="js/picturefill.min.js" async></script>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 
 <body>
 
+  <div class="hidden">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="header">
     <div class="header__wrapper">
       <div class="header__block">
-        <a class="header__logo logo" href="">
+        <a class="header__logo logo">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="39">
           </picture>
         </a>
-        <button class="header__button" type="button" aria-label="Меню сайта"></button>
+        <!-- header__button-/-close - кнопка с крестиком, header__button-/-open - кнопка гамбургер -->
+        <!-- при подключенном js класс header__button-/-no-js удаляется -->
+        <button class="header__button header__button--close header__button--no-js" type="button"
+          aria-label="Меню сайта"></button>
       </div>
-      <nav class="header__main-menu menu">
+      <!-- menu-/-close класс отвечающий за включение и выключение меню на мобильной версии.
+      при реализации меню на js добавлять и удалять класс menu-/-close в блоке menu-->
+      <!-- при подключенном js класс menu-/-no-js удаляется -->
+      <nav class="header__main-menu menu menu--no-js">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link menu__link--white menu__link--active-menu" href="">Главная</a>
+          <li class="menu__item"><a class="menu__link menu__link--white menu__link--active-menu">Главная</a>
           </li>
           <li class="menu__item"><a class="menu__link menu__link--white" href="catalog.html">Каталог продукции</a></li>
           <li class="menu__item"><a class="menu__link menu__link--white" href="form.html">Подбор программы</a></li>
@@ -52,7 +62,7 @@
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
           <img class="sample__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
-            alt="Cat Energy pro с курицей" width="280" />
+            alt="Cat Energy pro с курицей" width="280">
         </picture>
         <a class="sample__button button button--sample" href="form.html">Подобрать программу</a>
       </div>
@@ -105,8 +115,8 @@
         <div class="example__content">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-            часов в день. </p>
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+            спит по 16 часов в день.</p>
           <ul class="example__list">
             <li class="example__item">
               <span class="example__feature-text example__feature-text--big">5 кг</span>
@@ -122,42 +132,41 @@
           <p class="example__cost-text">Затраты на питание: <span class="example__cost-number">15 000 руб.</span></p>
         </div>
         <div class="example__slider slider">
-          <div class="slider__wrapper">
-            <div class="slider__slide slider__slide--before">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)"
-                  srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+          <div class="slider__slide slider__slide--before">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="slider__cat-img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-                  alt="Кот до приема продуктов Кэт энерджи" width="320" height="240">
-              </picture>
-            </div>
-            <div class="slider__slide slider__slide--after hidden">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)"
-                  srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="slider__cat-img slider__cat-img--before" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" alt="Кот до приема продуктов Кэт энерджи" width="320" height="240">
+            </picture>
+          </div>
+          <div class="slider__slide slider__slide--after">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="slider__cat-img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
-                  alt="Кот после приема продуктов Кэт энерджи" width="320" height="240">
-              </picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="slider__cat-img slider__cat-img--after" src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" alt="Кот после приема продуктов Кэт энерджи" width="320"
+                height="240">
+            </picture>
+          </div>
+          <div class="slider__toggles-container">
+            <span class="slider__toggle slider__toggle--was">Было</span>
+            <div class="slider__condition-container">
+              <span class="slider__condition"></span>
             </div>
-            <div class="slider__toggles-container">
-              <span class="slider__toggle slider__toggle--was">Было</span>
-              <div class="slider__condition-container">
-                <span class="slider__condition"></span>
-              </div>
-              <span class="slider__toggle slider__toggle--be">Стало</span>
-            </div>
+            <span class="slider__toggle slider__toggle--be">Стало</span>
           </div>
         </div>
       </div>
@@ -179,28 +188,28 @@
 
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="footer__link-text" href="">
+      <a class="footer__link-text">
         <img class="footer__logo-text" src="img/logo-footer.svg" alt="Cat Energy" width="128" height="24">
       </a>
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link" href="https://vk.com" target="_blank">
             <svg class="social__img-vk">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://instagram.com" target="_blank">
             <svg class="social__img-inst">
-              <use xlink:href="img/sprite.svg#icon-inst"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="https://facebook.com" target="_blank">
             <svg class="social__img-fb">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -208,7 +217,7 @@
       <a class="footer__link-academy academy-links" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="academy-links__text">HTML Academy</span>
         <svg class="academy-links__img">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </div>
@@ -216,7 +225,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=c44859d8-d87b-4b60-aa9e-429e15f7d631&lang=ru_RU"></script>
   <script src="js/yandex-map.js"></script>
   <!-- полифил для работы svg спрайтов в ie11 -->
-  <script src="js/svgxuse.js" defer></script>
+  <script src="js/svgxuse.js" defer=""></script>
 </body>
 
 </html>

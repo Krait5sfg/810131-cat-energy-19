@@ -1,40 +1,87 @@
-.slider__wrapper {
-  /*выравнивает контент. боковые падинги в example__wrapper*/
-  max-width: 320px;
-  margin: 0 auto;
-  padding-top: 35px;
+.slider {
+  position: relative;
+
+  min-height: 325px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-    padding: 0;
-    padding-top: 85px;
+    min-height: 631px;
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    width: 690px;
+    min-height: 652px;
   }
 }
 
 .slider__slide {
-  text-align: center;
+  overflow-x: hidden;
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    //выравнивает изображение внутри слайдера для pixel perfect
-    padding-left: 14px;
+  &--before {
+    @media (min-width: $tablet-width) {
+      min-height: inherit;
+      width: 50%;
+
+      background-image: linear-gradient(to bottom, #ffffff 169px, #f2f2f2 169px);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 417px;
+
+      background-image: linear-gradient(to bottom, #ffffff 189px, #f2f2f2 189px);
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    width: 690px; /*такая ширина чтобы кот на десктопе попадал в pixel perfect*/
+  &--after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      min-height: inherit;
+      width: 50%;
+      background-image: linear-gradient(to bottom, #ffffff 169px, #eaeaea 169px);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: linear-gradient(to bottom, #ffffff 189px, #eaeaea 189px);
+    }
   }
 }
 
 .slider__cat-img {
-  width: auto;
-  height: 100%;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    display: block;
+    width: auto;
+    max-width: $tablet-width;
+    min-height: 517px;
+  }
 
   @media (min-width: $desktop-width) {
-    transform: translateY(-30px);
+    max-width: 690px;
+  }
+
+  &--before {
+    @media (min-width: $tablet-width) {
+      right: -352px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -325px;
+    }
+  }
+
+  &--after {
+    @media (min-width: $tablet-width) {
+      left: -338px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -365px;
+    }
   }
 }
 
@@ -48,14 +95,19 @@
   margin-top: 28px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 508px;
+    left: 50%;
     width: 576px;
-    margin-top: 15px;
+
+    transform: translateX(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-top: 5px;
-    margin-left: 76px;
+    top: 529px;
+    left: 77px;
+
+    transform: none;
   }
 }
 
@@ -95,6 +147,10 @@
       height: 1px;
 
       border-top: 1px dotted #bebebe;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -7px;
     }
   }
 
