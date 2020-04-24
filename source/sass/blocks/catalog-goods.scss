@@ -15,18 +15,18 @@
     max-width: $tablet-width; /*адаптив*/
     margin: 0 auto; /*адаптив*/
     padding: 0 30px;
-    padding-top: 30px;
+    padding-top: 26px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     padding: 0 40px;
-    padding-top: 30px;
+    padding-top: 26px;
   }
 }
 
 .catalog-goods__item:nth-child(-n+4) {
   @media (min-width: $desktop-width) {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
 }
