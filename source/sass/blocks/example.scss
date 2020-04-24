@@ -72,8 +72,8 @@
 }
 
 .example__text {
-  width: 268px;
-  margin: 0;
+  // width: 268px;
+  width: 271px;
   margin-top: 23px;
 
   @include text-set(14px, 18px, $arial);
