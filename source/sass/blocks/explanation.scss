@@ -45,6 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: flex-start;
     margin-top: 72px;
   }
 }
@@ -84,13 +85,17 @@
   @media (min-width: $desktop-width) {
     width: 245px;
 
-    min-height: 255px; //test
+    min-height: 254px;
 
     padding-right: 0;
 
     &:nth-child(1),
     &:nth-child(2) {
       margin-bottom: 0;
+    }
+
+    &:nth-child(1n):not(:nth-child(4n)) {
+      margin-right: 80px;
     }
   }
 
