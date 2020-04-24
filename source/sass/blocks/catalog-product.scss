@@ -134,6 +134,10 @@
 
   &--right {
     text-align: right;
+
+    @media (max-width: 767px) {
+      transform: translateX(2px); //выравнивает по пиксел перфект только для мобилки
+    }
   }
 
   @media (min-width: $tablet-width) {
