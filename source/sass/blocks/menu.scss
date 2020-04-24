@@ -37,7 +37,15 @@
     padding-top: 22px;
     border: none;
 
-    &:nth-child(1n):not(:first-child) {
+    &:nth-child(3) {
+      margin-left: 36px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 34px;
+    }
+
+    &:nth-child(1n + 4) {
       margin-left: 35px;
     }
   }
@@ -45,8 +53,12 @@
   @media (min-width: $desktop-width) {
     padding-top: 23px;
 
-    &:nth-child(1n):not(:first-child) {
+    &:nth-child(3) {
       margin-left: 34px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 35px;
     }
   }
 }
