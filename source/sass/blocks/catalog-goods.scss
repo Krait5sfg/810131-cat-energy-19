@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .catalog-goods__wrapper {
@@ -25,8 +29,16 @@
   }
 }
 
-.catalog-goods__item:nth-child(-n+4) {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 3px;
+.catalog-goods__item {
+  &:nth-child(-n+4) {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 3px;
+    }
+  }
+
+  &:nth-child(1n):not(:nth-child(4n)) {
+    @media (min-width: $desktop-width) {
+      margin-right: 80px;
+    }
   }
 }
