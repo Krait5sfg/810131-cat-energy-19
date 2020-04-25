@@ -1,9 +1,9 @@
 //скрипт нужен для корректной смены цвета в svg иконках в ie 11
-const input_mail = document.querySelector(".form-owner__input--email");
-const icon_mail = document.querySelector(".form-owner__icon--mail");
+var input_mail = document.querySelector(".form-owner__input--email");
+var icon_mail = document.querySelector(".form-owner__icon--mail");
 
-const input_phone = document.querySelector(".form-owner__input--phone");
-const icon_phone = document.querySelector(".form-owner__icon--phone");
+var input_phone = document.querySelector(".form-owner__input--phone");
+var icon_phone = document.querySelector(".form-owner__icon--phone");
 
 //для иконки с почтой
 input_mail.addEventListener("focus", function () {

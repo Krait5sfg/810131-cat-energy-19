@@ -1,7 +1,5 @@
 ymaps.ready(init);
 
-let iconSize = [60, 50];
-
 function init() {
   var map = new ymaps.Map("my-map", {
     center: [59.93886466, 30.32310321],
@@ -17,7 +15,7 @@ function init() {
     {
       iconLayout: "default#image",
       iconImageHref: "img/map-pin.png",
-      iconImageSize: iconSize,
+      iconImageSize: [60, 50],
       iconImageOffset: [-30, -30],
     });
   map.geoObjects.add(point);
