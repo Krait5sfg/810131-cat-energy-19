@@ -241,3 +241,9 @@
     line-height: 24px;
   }
 }
+
+.explanation__first-line {
+  @media (min-width: $desktop-width) {
+    white-space: nowrap; //для ie 11 чтобы не делал перенос последнего слова в строке
+  }
+}
