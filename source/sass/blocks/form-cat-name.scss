@@ -6,7 +6,7 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 41px;
+  padding-top: 40px;
   padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
@@ -121,6 +121,10 @@
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
   }
 
   &:hover {

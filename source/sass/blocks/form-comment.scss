@@ -1,6 +1,8 @@
 .form-comment {
   position: relative;
 
+  min-height: 241px;
+
   //линия справа от титула
   &::after {
     position: absolute;
@@ -53,6 +55,7 @@
   padding: 0 20px;
   padding-top: 29px;
 
+
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
     padding: 0 30px;
@@ -89,6 +92,7 @@
   width: 100%;
   min-height: 149px;
   margin-top: 35px;
+  padding: 0;
   padding-top: 12px;
   padding-left: 15px;
 

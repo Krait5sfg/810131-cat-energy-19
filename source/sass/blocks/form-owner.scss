@@ -50,7 +50,7 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 29px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
@@ -61,7 +61,7 @@
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     padding: 0 40px;
-    padding-top: 69px;
+    padding-top: 70px;
   }
 }
 
@@ -87,7 +87,7 @@
 
 .form-owner__list {
   @include list-reset;
-  padding-top: 33px;
+  padding-top: 35px;
 
   @media (min-width: $tablet-width) {
     padding-top: 76px;
@@ -175,7 +175,7 @@
 
   @media (min-width: $tablet-width) {
     height: 51px;
-    padding-left: 21px;
+    padding-left: 20px;
 
     font-size: 20px;
     line-height: 20px;
@@ -183,7 +183,7 @@
 
   @media (min-width: $desktop-width) {
     height: 52px;
-    padding-left: 19px;
+    padding-left: 17px;
   }
 
   &--email {

@@ -1,6 +1,12 @@
 .form-additional {
   position: relative;
 
+  min-height: 236px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 200px;
+  }
+
   //линия справа
   &::after {
     position: absolute;
@@ -52,7 +58,7 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 26px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
@@ -89,7 +95,7 @@
 
 .form-additional__list {
   @include list-reset;
-  padding-top: 38px;
+  padding-top: 40px;
   padding-left: 46px;
 
   @media (min-width: $tablet-width) {
