@@ -5,6 +5,7 @@
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
 
   background-color: #f2f2f2;
 
@@ -13,6 +14,7 @@
     padding-top: 75px;
     padding-left: 53px;
     padding-right: 272px;
+    padding-bottom: 62px;
 
     &:last-child {
       padding-right: 312px;
@@ -21,7 +23,6 @@
 
   @media (min-width: $desktop-width) {
     min-width: 570px;
-    padding: 0;
     padding-top: 75px;
     padding-left: 52px;
     padding-right: 50px;
@@ -35,8 +36,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 25px;
-    left: 23px;
+    top: 24px;
+    left: 22px;
 
     width: 50px;
     height: 50px;
@@ -55,8 +56,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 46px;
-      left: 50px;
+      top: 47px;
+      left: 52px;
       right: auto;
 
       width: 100px;
@@ -70,8 +71,8 @@
     &::after {
       position: absolute;
       content: "";
-      top: 20px;
-      left: 30px;
+      top: 22px;
+      left: 29px;
       z-index: 1;
 
       width: 36px;
@@ -83,14 +84,14 @@
       @media (min-width: $tablet-width) {
         top: 80px;
         left: auto;
-        right: 80px;
+        right: 78px;
         width: 154px;
-        height: 196px;
+        height: 194px;
       }
 
       @media (min-width: $desktop-width) {
-        top: 40px;
-        left: 65px;
+        top: 41px;
+        left: 66px;
         right: auto;
 
         width: 77px;
@@ -106,27 +107,27 @@
       position: absolute;
       content: "";
       top: 35px;
-      left: 10px;
+      left: 12px;
       z-index: 1;
 
-      width: 70px;
+      width: 68px;
       height: 29px;
 
       background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
-        top: 135px;
+        top: 134px;
         left: auto;
-        right: 30px;
+        right: 28px;
 
         width: 268px;
         height: 118px;
       }
 
       @media (min-width: $desktop-width) {
-        top: 70px;
-        left: 35px;
+        top: 68px;
+        left: 33px;
         right: auto;
 
         width: 135px;
@@ -138,7 +139,7 @@
 
 .product__title {
   margin: 0;
-  padding-left: 72px;
+  padding-left: 71px;
 
   @include text-set (24px, 37px, $oswald);
   font-weight: 400;
@@ -150,7 +151,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 163px;
+    margin-left: 162px;
   }
 }
 
@@ -174,6 +175,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 64px;
     margin-top: 75px;
   }
 }
@@ -200,7 +202,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -10px;
+    margin-top: 32px;
   }
 
   &::after {
@@ -235,6 +237,7 @@
 
     @media (min-width: $desktop-width) {
       left: 132px;
+      bottom: 3px;
     }
   }
 

@@ -8,7 +8,7 @@
     width: 324px; /*адаптив*/
     height: 571px;
 
-    background-image: linear-gradient(to bottom, #ffffff 137px, #f2f2f2 137px);
+    background-image: linear-gradient(to bottom, #ffffff 139px, #f2f2f2 139px);
     border: none;
   }
 
@@ -36,7 +36,7 @@
 
     flex-direction: column;
     padding: 0 35px;
-    padding-top: 300px;
+    padding-top: 302px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,7 +72,7 @@
   /*выравнивает картинки разного размера на планшете*/
   @media (min-width: $tablet-width) {
     position: absolute; /*убирает картинки из потока чтобы паддингами врапера влиять на контент*/
-    top: 53px;
+    top: 56px;
     left: 0;
 
     display: flex;
@@ -81,15 +81,16 @@
     height: 208px;
   }
 
-  @media (min-width: $tablet-width) {
-    top: 56px;
+  @media (min-width: $desktop-width) {
+    top: 58px;
   }
 }
 
 .catalog-product__img {
   @media (min-width: $tablet-width) {
     width: auto;
-    height: auto;
+    // height: auto;
+    height: 100%;
   }
 }
 
@@ -117,7 +118,7 @@
 .catalog-product__table {
   width: 100%;
   margin: 0;
-  margin-top: 9px;
+  margin-top: 12px;
 
   border-collapse: collapse;
 
@@ -128,11 +129,15 @@
 
 /*ячейки таблицы*/
 .catalog-product__data {
-  @include text-set (12px, 16px, $arial);
+  @include text-set (12px, 14px, $arial);
   color: #444444;
 
   &--right {
     text-align: right;
+
+    @media (max-width: 767px) {
+      transform: translateX(2px); //выравнивает по пиксел перфект только для мобилки
+    }
   }
 
   @media (min-width: $tablet-width) {

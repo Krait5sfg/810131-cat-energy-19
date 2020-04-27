@@ -41,6 +41,7 @@
     margin: 0;
     padding: 0;
     padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
@@ -71,8 +72,7 @@
 }
 
 .example__text {
-  width: 266px;
-  margin: 0;
+  width: 271px;
   margin-top: 23px;
 
   @include text-set(14px, 18px, $arial);
@@ -80,7 +80,7 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    width: 96%;
+    width: 97%;
     margin-top: 64px;
 
     font-size: 16px;
@@ -102,11 +102,11 @@
 
   @media (min-width: $tablet-width) {
     width: 366px;
-    margin-top: 53px;
+    margin-top: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 67px;
+    margin-top: 51px;
   }
 }
 
@@ -189,7 +189,7 @@
   @media (min-width: $tablet-width) {
     width: 192px;
 
-    margin-top: 59px;
+    margin-top: 43px;
     margin-left: auto;
 
     font-size: 20px;

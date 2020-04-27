@@ -1,5 +1,4 @@
 .menu {
-
   //класс для закрытия меню если нужна реализация на js
   &--close {
     @media (max-width: 767px) {
@@ -18,12 +17,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 440px;
+    justify-content: flex-end;
+    width: 486px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 479px;
+    width: 610px;
   }
 }
 
@@ -37,10 +36,30 @@
   @media (min-width: $tablet-width) {
     padding-top: 22px;
     border: none;
+
+    &:nth-child(3) {
+      margin-left: 36px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 34px;
+    }
+
+    &:nth-child(1n + 4) {
+      margin-left: 35px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 23px;
+
+    &:nth-child(3) {
+      margin-left: 34px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 35px;
+    }
   }
 }
 

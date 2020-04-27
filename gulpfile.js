@@ -15,6 +15,21 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var htmlmin = require("gulp-htmlmin");
+var pipeline = require("readable-stream").pipeline;
+var uglify = require("gulp-uglify");
+
+//сжимает js файлы и копирует в build сжатые
+gulp.task("compress-js", function () {
+  return pipeline(
+    gulp.src("source/js/*.js"),
+    uglify(),
+    rename({
+      suffix: ".min"
+    }),
+    gulp.dest("build/js")
+  );
+});
 
 //очищает папку build перед копированием
 gulp.task("clean", function () {
@@ -26,7 +41,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -34,12 +48,15 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-//вставляет спрайты во все html файлы, копирует html в build
+//вставляет спрайты во все html файлы, минимизирует html, копирует html в build,
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 });
 
@@ -102,6 +119,8 @@ gulp.task("server", function () {
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   //если произошли изменения в html запустить задачу html и перегрузить сервер
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  //если произошли изменения в js запустить задачу compress-js и перегрузить сервер
+  gulp.watch("source/js/*.js", gulp.series("compress-js", "refresh"));
 });
 
 //перегружает сервер
@@ -110,5 +129,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "compress-js", "html"));
 gulp.task("start", gulp.series("build", "server"));

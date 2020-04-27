@@ -33,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     align-items: baseline;
-    padding: 0 38px;
+    padding: 0 36px;
     padding-top: 25px;
   }
 
@@ -55,6 +55,7 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
+    padding-left: 2px;
 
     font-size: 20px;
     line-height: 20px;

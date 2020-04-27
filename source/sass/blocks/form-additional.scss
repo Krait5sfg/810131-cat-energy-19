@@ -1,6 +1,12 @@
 .form-additional {
   position: relative;
 
+  min-height: 236px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 200px;
+  }
+
   //линия справа
   &::after {
     position: absolute;
@@ -52,7 +58,7 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 26px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
@@ -89,19 +95,19 @@
 
 .form-additional__list {
   @include list-reset;
-  padding-top: 38px;
+  padding-top: 40px;
   padding-left: 46px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    height: 190px;
+    height: auto;
     padding-top: 66px;
     padding-left: 98px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     height: auto;
     padding: 0;
@@ -124,6 +130,10 @@
     margin-top: 22px;
   }
 
+  &:nth-child(1n + 5) {
+    margin-top: 22px; //отступы для новых элементов
+  }
+
   @media (min-width: $tablet-width) {
     width: 227px;
 
@@ -132,16 +142,24 @@
     }
 
     &:nth-child(2) {
-      margin-left: 118px;
+      margin-left: 117px;
     }
 
     &:nth-child(3) {
-      margin-top: 21px;
+      margin-top: 49px;
     }
 
     &:nth-child(4) {
-      margin-top: 21px;
-      margin-left: 118px;
+      margin-top: 49px;
+      margin-left: 117px;
+    }
+
+    &:nth-child(1n + 5) {
+      margin-top: 49px; //отступы для новых элементов
+    }
+
+    &:nth-child(2n + 6) {
+      margin-left: 117px; //отступы для новых элементов
     }
   }
 
@@ -151,6 +169,14 @@
 
     &:nth-child(1n) {
       margin: 0;
+    }
+
+    &:nth-child(1n):not(:nth-child(4n)) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(1n + 5) {
+      margin-top: 49px; //отступы для новых элементов
     }
   }
 }
