@@ -109,6 +109,11 @@
   border: 1px solid #bababa;
 }
 
+.form-radio__input-radio:disabled + .form-radio__label::before,
+.form-radio__input-radio:disabled + .form-radio__label {
+  opacity: 0.3;
+}
+
 .form-radio__label {
   @include text-set(16px, 18px, $oswald);
   font-weight: 400;

@@ -212,6 +212,11 @@
   background-position: center;
 }
 
+.form-additional__input-checkbox:disabled + label::before,
+.form-additional__input-checkbox:disabled + label {
+  opacity: 0.3;
+}
+
 .form-additional__label {
   @include text-set(16px, 18px, $oswald);
   font-weight: 400;
